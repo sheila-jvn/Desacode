@@ -1,23 +1,24 @@
 ---
 // Import the necessary components
-import MainLayout from '@/layouts/MainLayout.astro'
-import HeroSection from '@components/sections/landing/HeroSection.astro'
-import HeroSectionAlt from '@components/sections/landing/HeroSectionAlt.astro'
-import ClientsSection from '@components/sections/landing/ClientsSection.astro'
-import FeaturesGeneral from '@components/sections/features/FeaturesGeneral.astro'
-import FeaturesNavs from '@components/sections/features/FeaturesNavs.astro'
-import TestimonialsSection from '@components/sections/testimonials/TestimonialsSection.astro'
-import PricingSection from '@components/sections/pricing/PricingSection.astro'
-import FAQ from '@components/sections/FAQ.astro'
-import AnnouncementBanner from '@components/ui/banners/AnnouncementBanner.astro'
-import heroImage from '@images/hero-image.avif'
-import faqs from '@data/faqs.json'
-import features from '@data/features.json'
-import pricing from '@data/pricing.json'
-import featureImage from '@images/features-image.avif'
-import construction from '@images/construction-image.avif'
-import tools from '@images/automated-tools.avif'
-import dashboard from '@images/dashboard-image.avif'
+import MainLayout from "@/layouts/MainLayout.astro";
+import HeroSection from "@components/sections/landing/HeroSection.astro";
+import HeroSectionAlt from "@components/sections/landing/HeroSectionAlt.astro";
+import ClientsSection from "@components/sections/landing/ClientsSection.astro";
+import FeaturesGeneral from "@components/sections/features/FeaturesGeneral.astro";
+import FeaturesNavs from "@components/sections/features/FeaturesNavs.astro";
+import TestimonialsSection from "@components/sections/testimonials/TestimonialsSection.astro";
+import PricingSection from "@components/sections/pricing/PricingSection.astro";
+import FAQ from "@components/sections/FAQ.astro";
+import AnnouncementBanner from "@components/ui/banners/AnnouncementBanner.astro";
+import heroImage from "@images/hero-image.avif";
+import faqs from "@data/faqs.json";
+import features from "@data/features.json";
+import pricing from "@data/pricing.json";
+import featureImage from "@images/features-image.avif";
+import construction from "@images/construction-image.avif";
+import tools from "@images/automated-tools.avif";
+import dashboard from "@images/dashboard-image.avif";
+import PointsWithTitle from "@/components/sections/features/PointsWithTitle.astro";
 ---
 
 <MainLayout>
@@ -38,14 +39,25 @@ import dashboard from '@images/dashboard-image.avif'
     subTitle="Experience the reliability chosen by industry giants."
   />
 
-  <FeaturesGeneral
+  <PointsWithTitle
     title="About Us"
     subTitle="DesaCode is driven by a vision to democratize access to financial services, particularly in underserved communities across Indonesia. Through our comprehensive suite of BaaS solutions, we enable banks and financial institutions to streamline operations, enhance customer experiences, and expand their reach."
     features={[
       {
-        content: 'tono',
-        heading: 'tono'
-      }
+        content: "tono",
+        heading: "tono",
+        icon: "mdi:account-group",
+      },
+      {
+        content: "tono",
+        heading: "tono",
+        icon: "mdi:account-group",
+      },
+      {
+        content: "tono",
+        heading: "tono",
+        icon: "mdi:account-group",
+      },
     ]}
   />
 
@@ -63,32 +75,33 @@ import dashboard from '@images/dashboard-image.avif'
     testimonials={[
       {
         content:
-          'ScrewFast dramatically boosted our project efficiency. Setup was instant, and their rapid response times are phenomenal. Truly a game-changer in hardware and construction support!',
-        author: 'Samantha Ruiz',
-        role: 'Chief Operating Officer | ConstructIt Inc.',
+          "ScrewFast dramatically boosted our project efficiency. Setup was instant, and their rapid response times are phenomenal. Truly a game-changer in hardware and construction support!",
+        author: "Samantha Ruiz",
+        role: "Chief Operating Officer | ConstructIt Inc.",
         avatarSrc:
-          'https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?q=80&w=1453&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80'
-      }
+          "https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?q=80&w=1453&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
+      },
     ]}
     statistics={[
       {
-        count: '70k+',
-        description: 'customers equipped — from DIY to major construction firms'
-      },
-      {
-        count: '35%',
+        count: "70k+",
         description:
-          'uptick in project efficiency with ScrewFast tools and services'
+          "customers equipped — from DIY to major construction firms",
       },
       {
-        count: '15.3%',
+        count: "35%",
         description:
-          'reduction in maintenance costs reported by long-term clients'
+          "uptick in project efficiency with ScrewFast tools and services",
       },
       {
-        count: '2x',
-        description: 'quicker assembly using innovative fastening solutions'
-      }
+        count: "15.3%",
+        description:
+          "reduction in maintenance costs reported by long-term clients",
+      },
+      {
+        count: "2x",
+        description: "quicker assembly using innovative fastening solutions",
+      },
     ]}
   />
 
