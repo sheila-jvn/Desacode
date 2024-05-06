@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-import colors from 'tailwindcss/colors';
+import colors from "tailwindcss/colors";
 export default {
   content: [
     "./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}",
@@ -14,7 +14,7 @@ export default {
       white: "#ffffff",
       gray: colors.gray,
       indigo: colors.indigo,
-      neutral: colors.neutral,  // Used mainly for text color
+      neutral: colors.neutral, // Used mainly for text color
       yellow: {
         50: "#fefce8",
         100: "#fef9c3",
@@ -31,6 +31,19 @@ export default {
       }, // Primary colors, used mainly for links, buttons and svg icons
       red: colors.red, // Used for bookmark icon
       zinc: colors.zinc, // Used mainly for box-shadow
+      desacode: {
+        50: "#f2f7fc",
+        100: "#e1edf8",
+        200: "#c9e0f4",
+        300: "#a4cdec",
+        400: "#79b2e1",
+        500: "#5a95d7",
+        600: "#457ccb",
+        700: "#3862ae",
+        800: "#365697",
+        900: "#304a78",
+        950: "#212e4a",
+      },
     },
     extend: {},
   },

@@ -1,7 +1,7 @@
 // An array of links for navigation bar
 const navBarLinks = [
   { name: "Home", url: "/" },
-  { name: "Products", url: "/products" },
+  { name: "About Us", url: "/products" },
   { name: "Services", url: "/services" },
   { name: "Blog", url: "/blog" },
   { name: "Contact", url: "/contact" },
@@ -29,7 +29,7 @@ const footerLinks = [
 // An object of links for social icons
 const socialLinks = {
   facebook: "https://www.facebook.com/",
-  x: "https://twitter.com/",
+  LinkedIn: "https://www.linkedin.com/company/desacode/",
   github: "https://github.com/mearashadowfax/ScrewFast",
   google: "https://www.google.com/",
   slack: "https://slack.com/",
