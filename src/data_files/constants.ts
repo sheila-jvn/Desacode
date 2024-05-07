@@ -2,6 +2,7 @@ import ogImageSrc from "@images/social.png";
 
 export const SITE = {
   title: "Desacode",
+  author: "Desacode",
   tagline: "Simplifying Complexity, Enabling Growth",
   description: "Transform your business journey by simplifying complexities and unleashing unprecedented growth opportunities.",
   url: "https://desacode.com",

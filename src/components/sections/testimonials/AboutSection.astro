@@ -41,6 +41,7 @@ type About = {
           )
         }
       </div>
+
       <!-- Generate a blockquote for each testimonial in the testimonials array by
       mapping over the array. -->
       {
@@ -54,18 +55,18 @@ type About = {
             />
           ))
       }
-      {
-        src && alt && (
-          <Image
-            src={src}
-            alt={alt}
-            class="h-full w-full scale-110 object-cover object-center"
-            draggable={'false'}
-            loading={'eager'}
-            format={'avif'}
-          />
-        )
-      }
     </div>
+    {
+      src && alt && (
+        <Image
+          src={src}
+          alt={alt}
+          class="h-full w-full col-span-7 scale-110 object-cover object-center"
+          draggable={'false'}
+          loading={'eager'}
+          format={'avif'}
+        />
+      )
+    }
   </div>
 </section>
