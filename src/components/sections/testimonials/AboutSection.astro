@@ -1,80 +1,71 @@
 ---
-import AboutItem from "./AboutItem.astro";
-import AboutGrid from "../../ui/blocks/AboutGrid.astro";
+import { Image } from 'astro:assets'
+import AboutItem from './AboutItem.astro'
+import AboutGrid from '../../ui/blocks/AboutGrid.astro'
 
-const {
-  title,
-  subTitle,
-  abouts,
-  label
-} = Astro.props;
+const { title, subTitle, abouts, src, alt } = Astro.props
 
 interface Props {
-  title: string;
-  subTitle?: string;
-  abouts?: About[];
-  label?: LabelProps[];
+  title: string
+  subTitle?: string
+  abouts?: About[]
+  src: any
+  alt: string
 }
 
 // TypeScript type for testimonials
 type About = {
-  content: string;
-  author: string;
-  role: string;
-  avatarSrc: string;
-};
+  content: string
+  author: string
+  role: string
+  avatarSrc: string
+}
 
-// TypeScript type for stats.
-type LabelProps = {
-  label: string;
-  description: string;
-};
 ---
 
 <section
-  class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 2xl:max-w-full"
->
+  class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 2xl:max-w-full">
   <!-- Container for the testimonials -->
   <div
-    class="lg:grid lg:grid-cols-12 lg:items-center lg:justify-between lg:gap-16"
-  >
+    class="lg:grid lg:grid-cols-12 lg:items-center lg:justify-between lg:gap-16">
     <div class="lg:col-span-5 lg:col-start-1">
       <!-- Title and Subtitle -->
       <div class="mb-8">
         <h2
-          class="mb-2 text-3xl font-bold text-desacode-700 dark:text-desacode-700 lg:text-4xl"
-        >
+          class="mb-2 text-3xl font-bold text-desacode-700 dark:text-desacode-700 lg:text-4xl">
           {title}
         </h2>
-        {subTitle &&
-        <p class="text-neutral-600 dark:text-neutral-400">
-          {subTitle}
-        </p>
-      }
+        {
+          subTitle && (
+            <p class="text-neutral-600 dark:text-neutral-400">{subTitle}</p>
+          )
+        }
       </div>
-
-      <!-- Generate a blockquote for each testimonial in the testimonials array by mapping over the array. -->
-      { abouts &&
-        abouts.map((about) => (
-        <AboutItem content={about.content} author={about.author} role={about.role} avatarSrc={about.avatarSrc} />
-        ))
+      <!-- Generate a blockquote for each testimonial in the testimonials array by
+      mapping over the array. -->
+      {
+        abouts &&
+          abouts.map((about) => (
+            <AboutItem
+              content={about.content}
+              author={about.author}
+              role={about.role}
+              avatarSrc={about.avatarSrc}
+            />
+          ))
+      }
+      {
+        src && alt && (
+          <Image
+            src={src}
+            alt={alt}
+            class="h-full w-full scale-110 object-cover object-center"
+            draggable={'false'}
+            loading={'eager'}
+            format={'avif'}
+          />
+        )
       }
     </div>
-{ label &&
-    <div class="mt-10 lg:col-span-6 lg:col-end-13 lg:mt-0">
-      <div class="space-y-6 sm:space-y-8">
-        <ul
-          class="grid grid-cols-2 divide-x-2 divide-y-2 divide-desacode-700 overflow-hidden dark:divide-desacode-700"
-        >
-          <!-- Generate a list item for each stat in the statistics array by mapping over the array. -->
-          {
-            label.map((label, index) => (
-            <AboutGrid label={label.label} description={label.description} index={index}/>
-            ))
-          }
-        </ul>
-      </div>
-    </div>
-  }
   </div>
 </section>
