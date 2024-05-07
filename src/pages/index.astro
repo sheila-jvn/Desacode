@@ -7,6 +7,7 @@ import ClientsSection from "@components/sections/landing/ClientsSection.astro";
 import FeaturesGeneral from "@components/sections/features/FeaturesGeneral.astro";
 import FeaturesNavs from "@components/sections/features/FeaturesNavs.astro";
 import TestimonialsSection from "@components/sections/testimonials/TestimonialsSection.astro";
+import AboutSection from "@components/sections/testimonials/AboutSection.astro";
 import PricingSection from "@components/sections/pricing/PricingSection.astro";
 import FAQ from "@components/sections/FAQ.astro";
 import AnnouncementBanner from "@components/ui/banners/AnnouncementBanner.astro";
@@ -25,7 +26,7 @@ import PointsWithTitle from "@/components/sections/features/PointsWithTitle.astr
   <HeroSection
     title=`Simplifying Complexity, <span
         class="text-desacode-700 dark:text-desacode-700">Enabling Growth</span>`
-    subTitle="Top-quality hardware tools and expert construction services for every project need."
+    subTitle="Transform your business journey by simplifying complexities and unleashing unprecedented growth opportunities."
     primaryBtn="Start Exploring"
     primaryBtnURL="/products"
     secondaryBtn="Contact Sales Team"
@@ -39,24 +40,38 @@ import PointsWithTitle from "@/components/sections/features/PointsWithTitle.astr
     subTitle="Experience the reliability chosen by industry giants."
   />
 
-  <PointsWithTitle
+  <AboutSection
     title="About Us"
-    subTitle="DesaCode is driven by a vision to democratize access to financial services, particularly in underserved communities across Indonesia. Through our comprehensive suite of BaaS solutions, we enable banks and financial institutions to streamline operations, enhance customer experiences, and expand their reach."
-    features={[
+    subTitle="DesaCode is driven by a vision to democratize access to financial services, particularly in underserved communities across Indonesia. Through our comprehensive suite of BaaS solutions, we enable banks and financial institutions to streamline operations, enhance customer experiences, and expand their reach.";
+    abouts={[
       {
-        content: "tono",
-        heading: "tono",
-        icon: "mdi:account-group",
+        content:
+          "ScrewFast dramatically boosted our project efficiency. Setup was instant, and their rapid response times are phenomenal. Truly a game-changer in hardware and construction support!",
+        author: "Samantha Ruiz",
+        role: "Chief Operating Officer | ConstructIt Inc.",
+        avatarSrc:
+          "https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?q=80&w=1453&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
+      },
+    ]}
+    label={[
+      {
+        label: "ABC",
+        description:
+          "customers equipped — from DIY to major construction firms",
       },
       {
-        content: "tono",
-        heading: "tono",
-        icon: "mdi:account-group",
+        label: "ABC",
+        description:
+          "uptick in project efficiency with ScrewFast tools and services",
       },
       {
-        content: "tono",
-        heading: "tono",
-        icon: "mdi:account-group",
+        label: "ABC",
+        description:
+          "reduction in maintenance costs reported by long-term clients",
+      },
+      {
+        label: "ABC",
+        description: "quicker assembly using innovative fastening solutions",
       },
     ]}
   />
@@ -105,13 +120,11 @@ import PointsWithTitle from "@/components/sections/features/PointsWithTitle.astr
     ]}
   />
 
-  <PricingSection pricing={pricing} />
-
   <FAQ title="Frequently<br />asked questions" faqs={faqs} />
 
-  <HeroSectionAlt
+  <!-- <HeroSectionAlt
     title="Let's Build Together"
     subTitle="ScrewFast is an open-source template, meticulously crafted with Astro, Tailwind CSS, and Preline UI frameworks."
     url="https://github.com/mearashadowfax/ScrewFast"
-  />
+  /> -->
 </MainLayout>

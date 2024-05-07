@@ -5,8 +5,9 @@ import EmailFooterInput from "@components/ui/forms/input/EmailFooterInput.astro"
 import enStrings from "@utils/navigation.ts";
 import frStrings from "@utils/fr/navigation.ts";
 import Icon from "@components/ui/icons/Icon.astro";
-import BrandLogo from "@components/BrandLogo.astro";
 import { SITE } from "@data/constants";
+import { Image } from 'astro:assets';
+import Logo from '../../images/Logo.png'
 
 // Select the correct translation based on the page's lang prop:
 const strings = Astro.currentLocale === "fr" ? frStrings : enStrings;
@@ -25,7 +26,7 @@ const crafted: string = Astro.currentLocale === "fr" ? "Fabriqué par" : "Crafte
     <div class="grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-5">
       <div class="col-span-full lg:col-span-1">
         <!-- Brand Logo -->
-        <BrandLogo class="h-auto w-32" />
+        <Image alt="" src={Logo} class="h-auto w-36" />
       </div>
       <!-- An array of links for Product and Company sections -->
       {
@@ -44,7 +45,7 @@ const crafted: string = Astro.currentLocale === "fr" ? "Fabriqué par" : "Crafte
                     {link.name}
                   </a>
                   {section.section === "Company" && index === 2 ? (
-                    <span class="ms-1 inline rounded-lg bg-orange-500 px-2 py-1 text-xs font-bold text-neutral-50">
+                    <span class="ms-1 inline rounded-lg bg-desacode-700 px-2 py-1 text-xs font-bold text-neutral-50">
                       We're hiring!
                     </span>
                   ) : null}
@@ -86,14 +87,6 @@ const crafted: string = Astro.currentLocale === "fr" ? "Fabriqué par" : "Crafte
 
       <!-- Social Brands -->
       <div>
-        <FooterSocialLink url={strings.socialLinks.facebook}
-          ><Icon name="facebookFooter" />
-        </FooterSocialLink>
-
-        <FooterSocialLink url={strings.socialLinks.x}
-          ><Icon name="xFooter" /></FooterSocialLink
-        >
-
         <FooterSocialLink url={strings.socialLinks.github}
           ><Icon name="githubFooter" />
         </FooterSocialLink>
