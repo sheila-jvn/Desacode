@@ -1,4 +1,3 @@
-
 const navBarLinks = [
   { name: "Accueil", url: "/fr" },
   { name: "Produits", url: "/fr/products" },
@@ -28,11 +27,8 @@ const footerLinks = [
 ];
 
 const socialLinks = {
-  facebook: "#",
-  x: "#",
-  github: "https://github.com/mearashadowfax/ScrewFast",
-  google: "#",
-  slack: "#",
+  linkedin: "https://www.linkedin.com/company/desacode/",
+  instagram: "https://www.instagram.com/desacodeid/",
 };
 
 export default {

@@ -9,15 +9,7 @@ const navBarLinks = [
 // An array of links for footer
 const footerLinks = [
   {
-    section: "Ecosystem",
-    links: [
-      { name: "Documentation", url: "/welcome-to-docs/" },
-      { name: "Tools & Equipment", url: "/products" },
-      { name: "Construction Services", url: "/services" },
-    ],
-  },
-  {
-    section: "Company",
+    section: "Quick Links",
     links: [
       { name: "About us", url: "#" },
       { name: "Blog", url: "/blog" },
@@ -26,13 +18,11 @@ const footerLinks = [
     ],
   },
 ];
+
 // An object of links for social icons
 const socialLinks = {
-  facebook: "https://www.facebook.com/",
-  LinkedIn: "https://www.linkedin.com/company/desacode/",
-  github: "https://github.com/mearashadowfax/ScrewFast",
-  google: "https://www.google.com/",
-  slack: "https://slack.com/",
+  linkedin: "https://www.linkedin.com/company/desacode/",
+  instagram: "https://www.instagram.com/desacodeid/",
 };
 
 export default {
