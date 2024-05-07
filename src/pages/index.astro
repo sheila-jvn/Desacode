@@ -1,25 +1,14 @@
 ---
 // Import the necessary components
 import MainLayout from "@/layouts/MainLayout.astro";
-import HeroSection from "@components/sections/landing/HeroSection.astro";
-import HeroSectionAlt from "@components/sections/landing/HeroSectionAlt.astro";
-import ClientsSection from "@components/sections/landing/ClientsSection.astro";
-import FeaturesGeneral from "@components/sections/features/FeaturesGeneral.astro";
-import FeaturesNavs from "@components/sections/features/FeaturesNavs.astro";
-import TestimonialsSection from "@components/sections/testimonials/TestimonialsSection.astro";
-import AboutSection from "@components/sections/testimonials/AboutSection.astro";
-import PricingSection from "@components/sections/pricing/PricingSection.astro";
 import FAQ from "@components/sections/FAQ.astro";
-import AnnouncementBanner from "@components/ui/banners/AnnouncementBanner.astro";
-import heroImage from "@images/hero-image.avif";
+import FeaturesGeneral from "@components/sections/features/FeaturesGeneral.astro";
+import HeroSection from "@components/sections/landing/HeroSection.astro";
+import AboutSection from "@components/sections/testimonials/AboutSection.astro";
+import TestimonialsSection from "@components/sections/testimonials/TestimonialsSection.astro";
 import faqs from "@data/faqs.json";
 import features from "@data/features.json";
-import pricing from "@data/pricing.json";
-import featureImage from "@images/features-image.avif";
-import construction from "@images/construction-image.avif";
-import tools from "@images/automated-tools.avif";
-import dashboard from "@images/dashboard-image.avif";
-import PointsWithTitle from "@/components/sections/features/PointsWithTitle.astro";
+import heroImage from "@images/hero-image.avif";
 ---
 
 <MainLayout>
@@ -57,14 +46,6 @@ import PointsWithTitle from "@/components/sections/features/PointsWithTitle.astr
 
   <FeaturesGeneral
     title="Vision"
-    subTitle="To become a company that is a driving force by creating innovative products as well as a bridging real life to digital life in all business sectors."
-    alt="ScrewFast products in floating boxes"
-    features={features}
-  />
-
-  <FeaturesGeneral
-    reverse={true}
-    title="Mission"
     subTitle="To become a company that is a driving force by creating innovative products as well as a bridging real life to digital life in all business sectors."
     alt="ScrewFast products in floating boxes"
     features={features}
