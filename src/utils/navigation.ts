@@ -10,7 +10,6 @@ const footerLinks = [
     section: "Quick Links",
     links: [
       { name: "About us", url: "/" },
-      { name: "Blog", url: "/blog" },
       { name: "Products", url: "/services" },
       { name: "Contact", url: "/contact" },
     ],
