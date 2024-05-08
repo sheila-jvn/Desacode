@@ -4,6 +4,7 @@ import ReviewComponent from "@components/ui/blocks/ReviewComponent.astro";
 import PrimaryCTA from "@components/ui/buttons/PrimaryCTA.astro";
 import SecondaryCTA from "@components/ui/buttons/SecondaryCTA.astro";
 import { Image } from "astro:assets";
+import Headline from "@images/headline.jpg";
 
 // Define props from Astro
 const { withReview, avatars, starCount, rating, reviews, src, alt } =
@@ -68,18 +69,14 @@ interface Props {
   <!-- Hero Image Section -->
   <div class="flex w-full">
     <div class="top-12 overflow-hidden">
-      {
-        src && alt && (
           <Image
-            src={src}
-            alt={alt}
+            src={Headline}
+            alt={"headline"}
             class="h-full w-full scale-110 object-cover object-center"
             draggable={"false"}
             loading={"eager"}
             format={"avif"}
           />
-        )
-      }
     </div>
   </div>
 </section>
