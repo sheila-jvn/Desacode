@@ -1,98 +1,49 @@
 ---
 // Import the necessary components
-import { SITE } from '@/data_files/constants'
-import MainLayout from '@/layouts/MainLayout.astro'
-import FAQ from '@components/sections/FAQ.astro'
-import FeaturesGeneral from '@components/sections/features/FeaturesGeneral.astro'
-import HeroSection from '@components/sections/landing/HeroSection.astro'
-import AboutSection from '@components/sections/testimonials/AboutSection.astro'
-import TestimonialsSection from '@components/sections/testimonials/TestimonialsSection.astro'
-import faqs from '@data/faqs.json'
-import features from '@data/features.json'
-import heroImage from '@images/hero-image.avif'
-import CardSmall from '@components/ui/cards/CardSmall.astro'
-import CardWide from '@components/ui/cards/CardWide.astro'
-import FeaturesStatsAlt from '@components/sections/features/FeaturesStatsAlt.astro'
-import type { CollectionEntry } from 'astro:content'
-import { getCollection } from 'astro:content'
+import { SITE } from "@/data_files/constants";
+import MainLayout from "@/layouts/MainLayout.astro";
+import FeaturesGeneral from "@components/sections/features/FeaturesGeneral.astro";
+import HeroSection from "@components/sections/landing/HeroSection.astro";
+import AboutSection from "@components/sections/testimonials/AboutSection.astro";
+import CardSmall from "@components/ui/cards/CardSmall.astro";
+import features from "@data/features.json";
+import type { CollectionEntry } from "astro:content";
+import { getCollection } from "astro:content";
 
-const product: CollectionEntry<'products'>[] = (
-  await getCollection('products')
+const product: CollectionEntry<"products">[] = (
+  await getCollection("products")
 ).sort(
-  (a: CollectionEntry<'products'>, b: CollectionEntry<'products'>) =>
+  (a: CollectionEntry<"products">, b: CollectionEntry<"products">) =>
     a.data.main.id - b.data.main.id
-)
+);
 
-const pageTitle: string = `Products | ${SITE.title}`
+const pageTitle: string = `Products | ${SITE.title}`;
 ---
 
-<MainLayout
-  title={pageTitle}
-  structuredData={{
-    '@context': 'https://schema.org',
-    '@type': 'WebPage',
-    '@id': 'https://screwfast.uk/products',
-    url: 'https://screwfast.uk/products',
-    name: 'Hardware Tools | ScrewFast',
-    description:
-      'Explore the durability and precision of ScrewFast tools, designed for both professionals and enthusiasts.',
-    isPartOf: {
-      '@type': 'WebSite',
-      url: 'https://screwfast.uk',
-      name: 'ScrewFast',
-      description:
-        'ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs.'
-    },
-    inLanguage: 'en-US'
-  }}>
-  <HeroSection
-    title=`Simplifying Complexity, <span
-        class="text-desacode-700 dark:text-desacode-700">Enabling Growth</span>`
-    subTitle="Transform your business journey by simplifying complexities and unleashing unprecedented growth opportunities."
-    primaryBtn="Start Exploring"
-    primaryBtnURL="/services"
-    secondaryBtn="Contact Sales Team"
-    secondaryBtnURL="/contact"
-  />
+<MainLayout title={pageTitle}>
+  <HeroSection />
 
   <!-- <ClientsSection
     title="Trusted by Industry Leaders"
     subTitle="Experience the reliability chosen by industry giants."
   /> -->
 
-  <AboutSection
-    title="About Us"
-    subTitle="DesaCode is driven by a vision to democratize access to financial services, particularly in underserved communities across Indonesia. Through our comprehensive suite of BaaS solutions, we enable banks and financial institutions to streamline operations, enhance customer experiences, and expand their reach."
-    abouts={[
-      {
-        content:
-          'ScrewFast dramatically boosted our project efficiency. Setup was instant, and their rapid response times are phenomenal. Truly a game-changer in hardware and construction support!',
-        author: 'Samantha Ruiz',
-        role: 'Chief Operating Officer | ConstructIt Inc.',
-        avatarSrc:
-          'https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?q=80&w=1453&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80'
-      }
-    ]}
-    src={heroImage}
-    alt="logo"
-  />
+  <AboutSection />
 
-  <FeaturesGeneral
-    title="Vision"
-    subTitle="To become a company that is a driving force by creating innovative products as well as a bridging real life to digital life in all business sectors."
-    alt="ScrewFast products in floating boxes"
-    features={features}
-  />
+  <FeaturesGeneral />
 
   <h2
-    class="text-center px-4 py-10 pt-24 text-balance text-2xl font-bold text-desacode-700 dark:text-desacode-600 md:text-3xl">
+    class="text-balance px-4 py-10 pt-24 text-center text-2xl font-bold text-desacode-700 dark:text-desacode-600 md:text-3xl"
+  >
     Our Products
   </h2>
 
-  <section class="grid justify-items-center grid-cols-1 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
+  <section
+    class="grid grid-cols-1 justify-items-center gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8"
+  >
     {
       product.map((product) => {
-        return <CardSmall product={product} />
+        return <CardSmall product={product} />;
       })
     }
   </section>
