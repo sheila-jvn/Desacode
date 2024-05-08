@@ -9,11 +9,20 @@ import { Image } from "astro:assets";
 >
   <!-- Container for the testimonials -->
   <div
-    class="grid lg:grid-cols-2 lg:items-center lg:justify-center lg:justify-items-center lg:gap-16"
+    class="grid w-min mx-auto lg:grid-cols-2 lg:items-center lg:justify-center  lg:justify-items-center lg:gap-16"
   >
-    <div>
+    <!-- Image -->
+    <Image
+      src={IconDC}
+      alt="logo"
+      class="h-[300px] w-[300px] scale-110 items-center object-cover object-center"
+      draggable={"false"}
+      loading={"eager"}
+      format={"avif"}
+    />
+    <div class="min-w-[400px]">
       <!-- Title and Subtitle -->
-      <div class="mb-8">
+      <div>
         <h2
           class="mb-2 text-3xl font-bold text-desacode-700 dark:text-desacode-700 lg:text-4xl"
         >
@@ -30,13 +39,6 @@ import { Image } from "astro:assets";
       </div>
     </div>
 
-    <Image
-      src={IconDC}
-      alt="logo"
-      class="h-[300px] w-[300px] scale-110 object-cover object-center"
-      draggable={"false"}
-      loading={"eager"}
-      format={"avif"}
-    />
+    
   </div>
 </section>
