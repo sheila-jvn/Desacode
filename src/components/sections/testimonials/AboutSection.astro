@@ -1,17 +1,17 @@
 ---
 import heroImage from "@images/hero-image.avif";
-import IconDC from '@images/icon.png';
+import IconDC from "@images/icon.png";
 import { Image } from "astro:assets";
 ---
 
 <section
-  class="mx-auto  max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 2xl:max-w-full"
+  class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 2xl:max-w-full"
 >
   <!-- Container for the testimonials -->
   <div
-    class="lg:grid lg:grid-cols-12 lg:items-center lg:justify-center lg:gap-16"
+    class="grid lg:grid-cols-2 lg:items-center lg:justify-center lg:justify-items-center lg:gap-16"
   >
-    <div class="lg:col-span-5 lg:col-start-1">
+    <div>
       <!-- Title and Subtitle -->
       <div class="mb-8">
         <h2
@@ -33,7 +33,7 @@ import { Image } from "astro:assets";
     <Image
       src={IconDC}
       alt="logo"
-      class="col-span-7 h-[300px] w-[300px] scale-110 object-cover object-center"
+      class="h-[300px] w-[300px] scale-110 object-cover object-center"
       draggable={"false"}
       loading={"eager"}
       format={"avif"}
