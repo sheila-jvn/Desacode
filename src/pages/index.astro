@@ -1,5 +1,6 @@
 ---
 // Import the necessary components
+import ClientsSection from '@/components/sections/landing/ClientsSection.astro';
 import { SITE } from "@/data_files/constants";
 import MainLayout from "@/layouts/MainLayout.astro";
 import FeaturesGeneral from "@components/sections/features/FeaturesGeneral.astro";
@@ -17,29 +18,29 @@ const product: CollectionEntry<"products">[] = (
     a.data.main.id - b.data.main.id
 );
 
-const pageTitle: string = `Products | ${SITE.title}`;
+const pageTitle: string = `Home | ${SITE.title}`;
 ---
 
 <MainLayout title={pageTitle}>
   <HeroSection />
 
-  <!-- <ClientsSection
-    title="Trusted by Industry Leaders"
-    subTitle="Experience the reliability chosen by industry giants."
-  /> -->
+  <ClientsSection
+    title="Our Partners"
+    subTitle=" "
+  />
 
   <AboutSection />
 
   <FeaturesGeneral />
 
   <h2
-    class="text-balance px-4 py-10 pt-24 text-center text-2xl font-bold text-desacode-700 dark:text-desacode-600 md:text-3xl"
+    class="text-balance px-4 py-10 pt-24 text-center text-3xl font-bold text-desacode-700 dark:text-desacode-600 lg:text-4xl"
   >
     Our Products
   </h2>
 
   <section
-    class="grid grid-cols-1 justify-items-center gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8"
+    class="flex flex-wrap items-center justify-center gap-10"
   >
     {
       product.map((product) => {

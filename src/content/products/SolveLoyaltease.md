@@ -1,11 +1,11 @@
 ---
 title: "SF-FN F303"
-description: "Hex Bolts"
+description: "Solve Loyaltease"
 main:
   id: 4
   content: |
-    Introducing the SF-FN F303 Hex Bolts – the perfect choice for heavy-duty fastening applications. Crafted with precision and durability in mind, these hex bolts provide the strength and reliability you need for your toughest projects.
-  imgCard: "@/images/product-image-4.avif"
+    Solve Loyaltease: Loyalty app offers personalized rewards, seamless communication, and insightful analytics to help businesses build lasting relationships with customers and maximize profits. With tailored incentives, seamless integration, targeted promotions, and real-time analytics.
+  imgCard: "@/images/SolveLoyaltease.webp"
   imgMain: "@/images/product-image-main-4.avif"
   imgAlt: "Mockup boxes of hex bolts"
 tabs:
@@ -15,9 +15,6 @@ tabs:
   - id: "tabs-with-card-item-2"
     dataTab: "#tabs-with-card-2"
     title: "Specifications"
-  - id: "tabs-with-card-item-3"
-    dataTab: "#tabs-with-card-3"
-    title: "Blueprints"
 longDescription:
   title: "Heavy-Duty Fastening Solutions"
   subTitle: |
@@ -52,5 +49,5 @@ specificationsRight:
 blueprints:
   first: "@/images/blueprint-1.avif"
   second: "@/images/blueprint-2.avif"
-slug: f303    
+slug: SolveLoyaltease    
 ---

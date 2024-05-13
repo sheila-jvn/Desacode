@@ -1,4 +1,4 @@
-# Versatile Landing, Blog & Docs Template for a Simplified Web Presence
+<!-- # Versatile Landing, Blog & Docs Template for a Simplified Web Presence
 
 ![ScrewFast](https://github.com/mearashadowfax/ScrewFast/assets/125820963/cdf299bd-414a-4a2d-baf0-d188bb4709c7)
 
@@ -696,4 +696,4 @@ If you're interested in helping, you can contribute in several ways:
 
 ## License
 
-This project is released under the MIT License. Please read the [LICENSE](https://github.com/mearashadowfax/ScrewFast/blob/main/LICENSE) file for more details.
+This project is released under the MIT License. Please read the [LICENSE](https://github.com/mearashadowfax/ScrewFast/blob/main/LICENSE) file for more details. -->

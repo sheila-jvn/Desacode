@@ -14,6 +14,7 @@ const productsCollection = defineCollection({
       imgCard: image(),
       imgMain: image(),
       imgAlt: z.string(),
+      downloadUrl: z.string().optional(),
     }),
     tabs: z.array(
       z.object({

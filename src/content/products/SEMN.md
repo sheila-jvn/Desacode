@@ -1,13 +1,14 @@
 ---
 title: "SF-BN B203"
-description: "Tap Bolts and Nuts Set"
+description: "SolveEase Merchant Management"
 main:
   id: 3
   content: |
-    Meet the SF-BN B203 – your reliable companion for professional-grade fastening. This comprehensive box set comes with a versatile selection of tap bolts and nuts, meticulously crafted to provide the strongest hold for your construction and assembly projects.
-  imgCard: "@/images/product-image-3.avif"
+    SEMN: Your streamlined payment solution. With real-time surveillance, tailored insights, and fortified security, SEMN simplifies transactions for customers and boosts efficiency for merchants. Experience seamless integration and effortless payments with SEMN.
+  imgCard: "@/images/SEMN.webp"
   imgMain: "@/images/product-image-main-3.avif"
   imgAlt: "Mockup boxes of a tap bolts and nuts set"
+  downloadUrl: "/brochure/SEMN%20Brochur%20(ReDesain).pdf"
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
@@ -15,9 +16,6 @@ tabs:
   - id: "tabs-with-card-item-2"
     dataTab: "#tabs-with-card-2"
     title: "Specifications"
-  - id: "tabs-with-card-item-3"
-    dataTab: "#tabs-with-card-3"
-    title: "Blueprints"
 longDescription:
   title: "Strength Meets Precision"
   subTitle: |
@@ -52,5 +50,5 @@ specificationsRight:
 blueprints:
   first: "@/images/blueprint-1.avif"
   second: "@/images/blueprint-2.avif"
-slug: b203    
+slug: SEMN    
 ---

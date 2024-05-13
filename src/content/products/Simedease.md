@@ -1,13 +1,14 @@
 ---
 title: "SF-TB T845"
-description: "Machine Screws"
+description: "Simedease"
 main:
-  id: 1
+  id: 5
   content: |
-    Introducing the SF-TB T845 – your go-to solution for precision fastening in machinery and equipment. This comprehensive set of machine screws is meticulously crafted to meet the stringent demands of industrial applications, ensuring secure and reliable fastening.
-  imgCard: "@/images/rs.jpg"
+    SIMEDEASE increases the accessibility of healthcare services through virtual consultations, providing benefits to patients with limited mobility, underserved communities, and remote areas. This optimizes medication management for patients, while expanding the reach of healthcare providers and increasing patient engagement.
+  imgCard: "@/images/simedease.webp"
   imgMain: "@/images/product-image-main-1.avif"
   imgAlt: "Mockup boxes of machine screws set"
+  downloadUrl: "/brochure/Simedise%20Brochure.pdf"
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
@@ -15,9 +16,6 @@ tabs:
   - id: "tabs-with-card-item-2"
     dataTab: "#tabs-with-card-2"
     title: "Specifications"
-  - id: "tabs-with-card-item-3"
-    dataTab: "#tabs-with-card-3"
-    title: "Blueprints"
 longDescription:
   title: "Precision Fastening Solutions"
   subTitle: |
@@ -52,5 +50,5 @@ specificationsRight:
 blueprints:
   first: "@/images/blueprint-1.avif"
   second: "@/images/blueprint-2.avif"
-slug: t845    
+slug: Simedease    
 ---

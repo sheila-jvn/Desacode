@@ -1,29 +1,26 @@
 ---
 // Importing necessary components
-import MainLayout from "@/layouts/MainLayout.astro";
-import PrimaryCTA from "@components/ui/buttons/PrimaryCTA.astro";
-import CardSmall from "@components/ui/cards/CardSmall.astro";
-import CardWide from "@components/ui/cards/CardWide.astro";
-import FeaturesStatsAlt from "@components/sections/features/FeaturesStatsAlt.astro";
-import TestimonialsSectionAlt from "@components/sections/testimonials/TestimonialsSectionAlt.astro";
+import MainLayout from '@/layouts/MainLayout.astro'
+import FeaturesStatsAlt from '@components/sections/features/FeaturesStatsAlt.astro'
+import CardSmall from '@components/ui/cards/CardSmall.astro'
 
 // Importing necessary functions from Astro
-import { getCollection } from "astro:content";
-import type { CollectionEntry } from "astro:content";
-import { SITE } from "@data/constants";
+import { SITE } from '@data/constants'
+import type { CollectionEntry } from 'astro:content'
+import { getCollection } from 'astro:content'
 
 // Fetching all the product related content and sorting it by main.id
-const product: CollectionEntry<"products">[] = (
-  await getCollection("products")
+const product: CollectionEntry<'products'>[] = (
+  await getCollection('products')
 ).sort(
-  (a: CollectionEntry<"products">, b: CollectionEntry<"products">) =>
+  (a: CollectionEntry<'products'>, b: CollectionEntry<'products'>) =>
     a.data.main.id - b.data.main.id
-);
+)
 
 // Define variables for page content
-const title: string = "Services";
+const title: string = 'Services'
 const subTitle: string =
-  "The transformation of all forms of business processes from traditional business processes to digital processes is increasingly rapid, this change occurs because efficiency, effectiveness, security and level of comfort for customers are things that need to be considered in business development in the digital era. Therefore, we participate in the transformation process by providing the following smart solutions.";
+  'The transformation of all forms of business processes from traditional business processes to digital processes is increasingly rapid, this change occurs because efficiency, effectiveness, security and level of comfort for customers are things that need to be considered in business development in the digital era. Therefore, we participate in the transformation process by providing the following smart solutions.'
 
 // Testimonial data that will be rendered in the component
 // const testimonials = [
@@ -58,35 +55,37 @@ const subTitle: string =
 //     avatarAlt: "Image Description",
 //   },
 // ];
-const pageTitle: string = `Products | ${SITE.title}`;
+const pageTitle: string = `Products | ${SITE.title}`
 ---
 
 <MainLayout title={pageTitle}>
   <div
-    class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 2xl:max-w-full"
-  >
-    <div class="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
-      <div class="flex items-center gap-12">
+    class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 2xl:max-w-full">
+    <div class="mb-4 flex items-center justify-center gap-8 sm:mb-8 md:mb-12">
+      <div class="flex flex-col items-center gap-8">
         <h1
-          class="text-balance text-2xl font-bold tracking-tight text-desacode-700 dark:text-desacode-700 md:text-4xl md:leading-tight"
-        >
+          class="text-balance text-2xl font-bold tracking-tight text-desacode-700 dark:text-desacode-700 md:text-4xl md:leading-tight">
           {title}
         </h1>
         {
           subTitle && (
-            <p class="max-w-screen-sm text-pretty text-neutral-600 dark:text-neutral-400 md:block">
+            <p class="max-w-screen-sm text-center text-pretty text-neutral-600 dark:text-neutral-400 md:block">
               {subTitle}
             </p>
           )
         }
       </div>
     </div>
+    <h1
+      class="text-balance text-center text-2xl font-bold tracking-tight text-desacode-700 dark:text-desacode-700 md:text-4xl md:leading-tight">
+      Our Products
+    </h1>
     <!--Displaying products in alternating styles. Alternative product gets different card styling.-->
     <!--Maps through all product entries and displays them with either CardSmall or CardWide based on their position.-->
-    <section class="grid grid-cols-1 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
+    <section class="flex flex-wrap items-center justify-center gap-10 mt-10">
       {
         product.map((product, index) => {
-          return <CardSmall product={product} />;
+          return <CardSmall product={product} />
         })
       }
     </section>
