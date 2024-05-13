@@ -9,7 +9,8 @@ import { defineConfig } from "astro/config";
 // https://astro.build/config
 export default defineConfig({
   // https://docs.astro.build/en/guides/images/#authorizing-remote-images
-  site: "https://screwfast.uk",
+  site: "https://sheila-jvn.github.io",
+  base: '/Desacode',
   image: {
     domains: ["images.unsplash.com"],
   },
