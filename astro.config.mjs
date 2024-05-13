@@ -42,10 +42,8 @@ export default defineConfig({
       brotli: true,
     }),
   ],
-  output: "static",
   experimental: {
     clientPrerender: true,
     directRenderScript: true,
   },
-  adapter: vercelStatic(),
 });
