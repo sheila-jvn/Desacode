@@ -8,7 +8,7 @@ main:
   imgCard: "@/images/desapos.webp"
   imgMain: "@/images/product-image-main-2.avif"
   imgAlt: "Mockup boxes of assorted screw set"
-  downloadUrl: "/brochure/Desapos%20Brochure%20Redesain.pdf"
+  downloadUrl: "/Desacode/brochure/Desapos%20Brochure%20Redesain.pdf"
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"

@@ -8,7 +8,7 @@ main:
   imgCard: "@/images/Smartmedic.webp"
   imgMain: "@/images/product-image-main-1.avif"
   imgAlt: "Mockup boxes of machine screws set"
-  downloadUrl: "/brochure/Brochure%20Smartmedic%20Redesain%20Indo.pdf"
+  downloadUrl: "/Desacode/brochure/Brochure%20Smartmedic%20Redesain%20Indo.pdf"
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"

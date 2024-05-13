@@ -8,7 +8,7 @@ main:
   imgCard: "@/images/SEMN.webp"
   imgMain: "@/images/product-image-main-3.avif"
   imgAlt: "Mockup boxes of a tap bolts and nuts set"
-  downloadUrl: "/brochure/SEMN%20Brochur%20(ReDesain).pdf"
+  downloadUrl: "/Desacode/brochure/SEMN%20Brochur%20(ReDesain).pdf"
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"

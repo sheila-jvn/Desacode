@@ -8,7 +8,7 @@ main:
   imgCard: "@/images/simedease.webp"
   imgMain: "@/images/product-image-main-1.avif"
   imgAlt: "Mockup boxes of machine screws set"
-  downloadUrl: "/brochure/Simedise%20Brochure.pdf"
+  downloadUrl: "/Desacode/brochure/Simedise%20Brochure.pdf"
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
