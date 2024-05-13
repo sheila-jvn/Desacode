@@ -62,8 +62,8 @@ devDependencies:
     specifier: ^1.1.0
     version: 1.1.0
   astro-vtbot:
-    specifier: ^1.7.14
-    version: 1.7.15
+    specifier: ^1.7.17
+    version: 1.7.17
   prettier:
     specifier: ^3.2.5
     version: 3.2.5
@@ -1759,8 +1759,8 @@ packages:
       - supports-color
     dev: true
 
-  /astro-vtbot@1.7.15:
-    resolution: {integrity: sha512-TPqNlrnPKhm2t1yDjj7JyquKcW8WDQYmwsaMdk2ofkyc6LCP5JRvyMofA49wtbuLppV2irYIwq/uZw1TLMEW7w==}
+  /astro-vtbot@1.7.17:
+    resolution: {integrity: sha512-DWArck5gK03xXsm7weVFYBVA09Z0WFhyOZIf/Rk/uDQPp4pqIQYadZdE9cnA7gcfyoYSNJIwexJAx7tmC8x3zg==}
     dev: true
 
   /astro@4.7.1(typescript@5.4.5):
