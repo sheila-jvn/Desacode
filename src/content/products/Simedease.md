@@ -1,6 +1,6 @@
 ---
-title: "SF-TB T845"
-description: "Simedease"
+title: "SIMEDEASE"
+description: "Healthcare"
 main:
   id: 5
   content: |
@@ -15,38 +15,46 @@ tabs:
     title: "Description"
   - id: "tabs-with-card-item-2"
     dataTab: "#tabs-with-card-2"
-    title: "Specifications"
+    title: "Features"
 longDescription:
-  title: "Precision Fastening Solutions"
+  title: "SIMEDEASE is more than just a telemedicine platform."
   subTitle: |
-    The SF-TB T845 Machine Screws offer unparalleled precision and reliability for industrial applications, ensuring seamless operation and longevity for your machinery and equipment.
+    By leveraging technology to reach underserved populations, SIMEDEASE can address healthcare disparities, promote preventive care, and support sustainable health initiatives worldwide. Join us in embracing telemedicine as a catalyst for positive change in healthcare delivery. Together, let's harness the power of innovation to build a healthier, more connected world for generations to come.
+
   btnTitle: "Contact sales to learn more"
-  btnURL: "#"
+  btnURL: "/Desacode/contact"
 descriptionList:
-  - title: "Durability"
-    subTitle: "Crafted from high-quality materials, these machine screws are built to withstand the rigors of industrial environments."
-  - title: "Precision Engineering"
-    subTitle: "Engineered with precision-cut threads and exact specifications, ensuring a tight and secure fit for every application."
-  - title: "Versatility"
-    subTitle: "Suitable for a wide range of machinery and equipment, providing versatile fastening solutions for various industrial needs."
+  - title: "Experience healthcare in a new light with SIMEDEASE"
+    subTitle: "Bridge the gap in healthcare access and empower underserved populations with SIMEDEASE. Whether you're in a rural area or a bustling city, SIMEDEASE ensures that everyone has access to the care they need, when they need it. In the fast-paced world of healthcare, ensures equitable access to care  regardless of geographical barriers. SIMEDEASE allows healthcare providers to deliver exceptional care, patients to receive convenient access to services, and communities to thrive with improved health outcomes."
+  - title: "Experience a paradigm shift in healthcare accessibility"
+    subTitle: "From remote diagnostics to virtual appointments, gain prompt access to medical expertise and personalized care from the comfort of your surroundings. Empower yourself with knowledge and take proactive steps towards better health."
+  - title: "Telemedicine serves as a beacon of hope for communities worldwide"
+    subTitle: "breaking down barriers to healthcare access and fostering healthier populations. By reaching underserved areas and providing preventive care services, SIMEDEASE promotes equity, improves health outcomes, and strengthens community resilience. 
+    In the era of digital health, telemedicine emerged as a transformative tool, revolutionizing healthcare delivery and empowering individuals to take control of their health. Join us in harnessing the power of SIMEDEASE to build a brighter, healthier future for all."
+  - title: "Embrace telemedicine to elevate your practice to new heights"
+    subTitle: "Seamlessly integrate virtual consultations, remote monitoring, and digital health records to deliver comprehensive, patient-centered care. With SIMEDEASE, you can enhance efficiency, expand access, and optimize outcomes for your patients."
 specificationsLeft:
-  - title: "Material Composition"
-    subTitle: "Constructed from premium-grade steel or alloy for exceptional strength and durability."
-  - title: "Surface Finish"
-    subTitle: "Finished with a protective coating to enhance corrosion resistance and extend service life."
-  - title: "Quantity Per Set"
-    subTitle: "Each set contains a comprehensive assortment of machine screws to meet diverse industrial requirements."
-  - title: "Size Range"
-    subTitle: "Available in various sizes and lengths to accommodate different machinery and equipment specifications."
+  - title: "Virtual Consultations"
+    subTitle: "Patients can schedule appointments and have real-time video or audio consultations with healthcare professionals from anywhere, eliminating the need for in-person visits."
+  - title: "Remote Monitoring"
+    subTitle: "Patients can use connected devices to measure and transmit health data such as vital signs, blood glucose levels, or heart rate to healthcare providers for remote monitoring and assessment."
+  - title: "Electronic Health Records (EHR) Integration"
+    subTitle: "SIMEDEASE platforms often integrate with electronic health record systems, allowing healthcare providers to access patient medical histories, lab results, and other relevant information during virtual consultations."
+  - title: "Secure Communication"
+    subTitle: "SIMEDEASE platforms prioritize patient privacy and data security by employing encryption and secure communication protocols to safeguard sensitive medical information shared during consultations."
+  - title: "Accessibility"
+    subTitle: "SIMEDEASE enhances access to healthcare services, particularly for individuals in rural or underserved areas, by overcoming geographical barriers and reducing the need for travel to healthcare facilities."
 specificationsRight:
-  - title: "Thread Specifications"
-    subTitle: "Precision-engineered threads ensure optimal grip and reliability, even in high-vibration environments."
-  - title: "Load Capacity"
-    subTitle: "Designed to meet or exceed industry standards for load-bearing capacity, ensuring safe and reliable operation."
-  - title: "Certifications"
-    subTitle: "Compliant with relevant industry standards and certifications, guaranteeing quality and reliability."
-  - title: "Applications"
-    subTitle: "Ideal for use in a wide range of industrial machinery, equipment, and assemblies that demand precise and secure fastening."
+  - title: "Flexibility"
+    subTitle: "SIMEDEASE offers flexibility in scheduling appointments, allowing patients to access care outside of traditional clinic hours and reducing wait times for consultations"
+  - title: "Patient Engagement Tools"
+    subTitle: "Many SIMEDEASE platforms include features such as appointment reminders, medication adherence support, and patient education resources to engage patients in their care and promote better health outcomes."
+  - title: "Automated Reminders and Notifications"
+    subTitle: "The SIMEDEASE platform sends automated reminders and notifications to patients regarding upcoming appointments, appointment confirmations, and any changes to the schedule, reducing missed appointments and improving overall appointment adherence."
+  - title: "Flexible Rescheduling and Cancellation Policies"
+    subTitle: "Patients can easily reschedule or cancel appointments through the SIMEDEASE platform, with flexible rescheduling options and clear cancellation policies, minimizing disruptions to the schedule and optimizing appointment utilization."
+  - title: "Multi-channel Communication"
+    subTitle: "Patients can schedule appointments and communicate with healthcare providers through multiple channels, such as video conferencing or integrated chat features within the SIMEDEASE platform."
 blueprints:
   first: "@/images/blueprint-1.avif"
   second: "@/images/blueprint-2.avif"

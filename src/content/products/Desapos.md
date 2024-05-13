@@ -1,10 +1,10 @@
 ---
-title: "SF-AB A765"
-description: "Desapos" 
+title: "DesaPOS"
+description: "Retail" 
 main:
   id: 2
   content: |
-    SolveEase QuickCharge: A complete POS solution designed to simplify operations and improve the customer experience. With real-time transaction tracking, reliable inventory management, and customizable reports, businesses can optimize efficiency and drive growth.
+    A complete POS solution designed to simplify operations and improve the customer experience. With real-time transaction tracking, reliable inventory management, and customizable reports, businesses can optimize efficiency and drive growth.
   imgCard: "@/images/desapos.webp"
   imgMain: "@/images/product-image-main-2.avif"
   imgAlt: "Mockup boxes of assorted screw set"
@@ -15,37 +15,58 @@ tabs:
     title: "Description"
   - id: "tabs-with-card-item-2"
     dataTab: "#tabs-with-card-2"
-    title: "Specifications"
+    title: "Features"
 longDescription:
-  title: "Versatile Screw Fastening Solutions"
+  title: "Stay Ahead of the Competition"
   subTitle: |
-    The SF-AB A765 Assorted Screw Set offers unmatched versatility and convenience, making it the perfect choice for DIY enthusiasts and professionals alike. With a comprehensive selection of screws, you'll always have the right fastener for the job.
+    In today's fast-paced retail environment, staying ahead of the competition is essential. Our POS system evolves with your business, offering scalability, flexibility, and advanced features to meet your unique needs. Embrace innovation and future-proof your business with our cutting-edge solution.
   btnTitle: "Contact sales to learn more"
-  btnURL: "#"
+  btnURL: "/Desacode/contact"
 descriptionList:
-  - title: "Wide Variety"
-    subTitle: "Includes a diverse range of screw types and sizes to accommodate various applications and materials."
-  - title: "Ease of Use"
-    subTitle: "Each screw is designed for effortless installation, ensuring hassle-free fastening every time."
-  - title: "Convenience"
-    subTitle: "Eliminates the need for multiple trips to the hardware store, saving time and effort on your projects."
+  - title: "Introducing SolveEase QuickCharge: Streamline Sales, Amplify Success with Our POS Solutions."
+    subTitle: "At DesaCode, we understand the challenges that come with managing a successful retail operation. That's why we've developed cutting-edge Point of Sale (POS) solutions designed to streamline your business processes, boost sales, and enhance customer satisfaction."
+  - title: "Start With SolveEase QuickCharge"
+    subTitle: "Introducing SolveEase QuickCharge, your all-in-one solution for all sizes of businesses. Utilize SolveEase QuickCharge to efficiently manage your brick-and-mortar business operations, while leveraging actionable insights derived from transaction data to drive sales growth and enhance scalability."
+  - title: "Operational Solutions"
+    subTitle: "1. Order processing
+
+    2. Payment processing, whether through online or offline channels 
+    
+    3. Managing tables efficiently
+
+    Enhance order efficiency and accuracy through Contactless Ordering via Mobile Wallet Payments."
+  - title: "Integration With SoftPOS"
+    subTitle: "With SoftPOS, There is no external card reader. The smartphone or tablet itself works as a POS terminal without an external card reader. There are many benefits of SoftPOS:
+
+    1. No need to carry additional hardware. You can use your mobile phone. 
+
+    2. No Bluetooth connection as there is no need for an external device to communicate. 
+
+    3. Easily be activated on your mobile phone. 
+
+    4. Don’t need to pay your service provider to perform credit debit transactions because SoftPOS don’t need an external device." 
 specificationsLeft:
-  - title: "Material"
-    subTitle: "Constructed from high-quality materials such as stainless steel, ensuring durability and corrosion resistance."
-  - title: "Assortment"
-    subTitle: "Contains a generous assortment of screws, including wood screws, machine screws, and sheet metal screws."
-  - title: "Quantity"
-    subTitle: "Each set includes a sufficient quantity of screws to handle a wide range of projects and tasks."
-  - title: "Sizes"
-    subTitle: "Available in various sizes to suit different project requirements, ensuring compatibility and versatility."
-tableData:
-  - feature: ["Specification", "Value"]
-    description:
-      - ["Length (mm)", "Various"]
-      - ["Weight (g)", "N/A"]
-      - ["Material", "Stainless Steel"]
-      - ["Finish", "Assorted"]
-      - ["Package Contents", "Various screws in a set"]
+  - title: "Sales Process with Customer"
+    subTitle: "Effortlessly manage your sales process and engage with customers like never before. From initial inquiry to final purchase, our system facilitates smooth interactions, driving sales and  customer satisfaction."
+  - title: "Inventory Management"
+    subTitle: "Take control of your product stock with ease. Track inventory levels in real-time and streamline purchasing from suppliers to ensure you always have what you need on hand."
+  - title: "Customer Management"
+    subTitle: "Build lasting relationships with your customers using our robust database management tools. Create personalized loyalty programs and keep track of valuable customer data to enhance engagement and drive repeat business."
+  - title: "Reports and Analytics"
+    subTitle: "Gain valuable insights into your business with customizable reports and powerful analytics tools. Identify trends, monitor performance, and make informed decisions to drive growth and profitability."
+  - title: "Employee Management"
+    subTitle: "Efficiently manage your workforce with our intuitive employee management features. From tracking data to managing schedules, our system simplifies every aspect of employee administration."
+specificationsRight:
+  - title: "Table Management"
+    subTitle: "Enhance the dining experience with our innovative table management capabilities. Customers can conveniently scan QR codes to place orders and make payments via mobile wallet, streamlining operations and improving customer satisfaction."
+  - title: "Cash Management"
+    subTitle: "Take control of your cash flow with our comprehensive cash management tools. Easily open and close cashiers, input initial cash for the day, and ensure accurate accounting every time."
+  - title: "Custom Discounts and Split Bills"
+    subTitle: "Empower your staff to provide exceptional service with custom discounts and split bill options. Tailor promotions to meet individual customer needs and accommodate group payments with ease."
+  - title: "Interactive Dashboard"
+    subTitle: "Stay informed and in control with our interactive dashboard. Monitor key metrics, track performance in real-time, and make data-driven decisions with confidence."
+  - title: "Software Point Of Sales(SoftPOS)"
+    subTitle: "Say goodbye to bulky card readers! Our innovative SoftPOS technology turns smartphones and tablets into fully functional POS terminals, offering convenience and flexibility without the need for external hardware. "
 blueprints:
   first: "@/images/blueprint-1.avif"
   second: "@/images/blueprint-2.avif"
