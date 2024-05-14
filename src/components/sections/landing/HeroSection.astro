@@ -24,10 +24,14 @@ interface Props {
 
 <!-- Defining a grid container that holds all the content -->
 <section
-  class="relative min-h-svh mx-auto grid max-w-[85rem] gap-4 px-4 py-14 sm:px-6 md:grid-cols-[auto,auto] md:items-center md:gap-8 lg:px-8 2xl:max-w-full">
+  class="relative mx-auto grid min-h-svh max-w-[85rem] gap-4 px-4 py-14 sm:px-6 md:grid-cols-[auto,auto] md:items-center md:gap-8 lg:px-8 2xl:max-w-full">
   <!-- Title and description -->
 
-  <img class="absolute -mt-[50px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 w-screen object-cover object-center h-full max-w-none brightness-50" src='/Desacode/headline.webp' alt='hero image' />
+  <img
+    class="absolute left-1/2 top-1/2 -z-10 -mt-[69px] h-svh w-screen max-w-none -translate-x-1/2 -translate-y-1/2 object-cover object-center brightness-50 md:-mt-[46px] 2xl:-mt-[50px]"
+    src="/Desacode/headline.webp"
+    alt="hero image"
+  />
 
   <div>
     <!-- Each h1 and p tag renders a portion of the title and subTitle defined above -->
@@ -67,7 +71,6 @@ interface Props {
     }
   </div>
 
-
   <!-- Hero Image Section -->
   <!-- <div class="flex w-full">
     <div class="top-12 overflow-hidden">
@@ -83,8 +86,4 @@ interface Props {
   </div> -->
 </section>
 
-<style>
-
-
-
-</style>
+<style></style>
