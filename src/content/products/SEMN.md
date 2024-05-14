@@ -7,7 +7,7 @@ main:
   content: |
     Your streamlined payment solution. With real-time surveillance, tailored insights, and fortified security, TradeStream simplifies transactions for customers and boosts efficiency for merchants. Experience seamless integration and effortless payments with TradeStream.
   imgCard: "@/images/SEMN.webp"
-  imgMain: "@/images/product-image-main-3.avif"
+  imgMain: "@/images/tradestream.svg"
   imgAlt: "Mockup boxes of a tap bolts and nuts set"
   downloadUrl: "/Desacode/brochure/SEMN%20Brochur%20(ReDesain).pdf"
 tabs:
