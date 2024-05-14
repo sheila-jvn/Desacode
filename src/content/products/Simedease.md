@@ -1,6 +1,7 @@
 ---
 title: "SIMEDEASE"
 description: "Healthcare"
+category: "Healthcare"
 main:
   id: 5
   content: |

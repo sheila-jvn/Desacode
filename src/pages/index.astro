@@ -1,13 +1,12 @@
 ---
 // Import the necessary components
 import ClientsSection from '@/components/sections/landing/ClientsSection.astro';
+import CardSmallCategory from '@/components/ui/cards/CardSmallCategory.astro';
 import { SITE } from "@/data_files/constants";
 import MainLayout from "@/layouts/MainLayout.astro";
 import FeaturesGeneral from "@components/sections/features/FeaturesGeneral.astro";
 import HeroSection from "@components/sections/landing/HeroSection.astro";
 import AboutSection from "@components/sections/testimonials/AboutSection.astro";
-import CardSmall from "@components/ui/cards/CardSmall.astro";
-import features from "@data/features.json";
 import type { CollectionEntry } from "astro:content";
 import { getCollection } from "astro:content";
 
@@ -17,6 +16,10 @@ const product: CollectionEntry<"products">[] = (
   (a: CollectionEntry<"products">, b: CollectionEntry<"products">) =>
     a.data.main.id - b.data.main.id
 );
+
+const categories = Array.from(
+  new Set(product.map((product) => product.data.category))
+)
 
 const pageTitle: string = `Home | ${SITE.title}`;
 ---
@@ -39,12 +42,17 @@ const pageTitle: string = `Home | ${SITE.title}`;
     Our Products
   </h2>
 
-  <section
-    class="flex flex-wrap items-center justify-center gap-10"
-  >
+  <section class="mt-10 flex flex-wrap items-center justify-center gap-10">
     {
-      product.map((product) => {
-        return <CardSmall product={product} />;
+      categories.map((category) => {
+        return (
+          <CardSmallCategory
+            src={`/Desacode/public/${category}.webp`}
+            alt=''
+            href={`/Desacode/services/${category}`}
+            content={category}
+          />
+        )
       })
     }
   </section>

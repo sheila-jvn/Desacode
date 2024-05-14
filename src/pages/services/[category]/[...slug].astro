@@ -17,7 +17,7 @@ declare global {
 export async function getStaticPaths() {
   const productEntries = await getCollection('products')
   return productEntries.map((product) => ({
-    params: { slug: product.slug },
+    params: { category: product.data.category, slug: product.slug },
     props: { product }
   }))
 }
@@ -121,7 +121,7 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`
                         {list.title}
                       </h3>
                       <p class="mt-1 text-neutral-600 dark:text-neutral-400">
-                        <span class="whitespace-pre-wrap" >{list.subTitle}</span>
+                        <span class="whitespace-pre-wrap">{list.subTitle}</span>
                       </p>
                     </div>
                   </div>
@@ -142,7 +142,7 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`
                     <h3 class="block font-bold text-neutral-800 dark:text-neutral-200">
                       {spec.title}
                     </h3>
-                    <p class="text-neutral-600 dark:text-neutral-400 whitespace-pre-wrap"  >
+                    <p class="whitespace-pre-wrap text-neutral-600 dark:text-neutral-400">
                       {spec.subTitle}
                     </p>
                   </div>

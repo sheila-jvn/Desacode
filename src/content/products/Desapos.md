@@ -1,6 +1,7 @@
 ---
 title: "DesaPOS"
 description: "Retail" 
+category: "Retail" 
 main:
   id: 2
   content: |

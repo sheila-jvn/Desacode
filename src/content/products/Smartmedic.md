@@ -1,6 +1,7 @@
 ---
 title: "Smartmedic+"
 description: "Healthcare"
+category: "Healthcare"
 main:
   id: 1
   content: |
