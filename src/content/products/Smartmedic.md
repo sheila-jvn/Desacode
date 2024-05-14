@@ -54,25 +54,27 @@ specificationsLeft:
   - title: "Providing care services for various age groups"
     subTitle: "Our app provides a wide range of care services tailored to the unique needs of different age groups. For children, this includes pediatric care, vaccinations, growth monitoring, and developmental assessments. For adults, services include preventive care, chronic disease management, and health screenings. For seniors, the app offers geriatric care, home healthcare, and assistance with activities of daily living."
   - title: "Integration with another service"
-    subTitle: "Our healthcare management system app is seamlessly integrated with a variety of systems to provide the best service to patients. 
+    subTitle: "Our healthcare management app integrates with various systems to provide optimal patient service:
 
-    1. Integration with BPJS for V-Claim allows for streamlined processing of healthcare claims, ensuring patients receive timely reimbursement for medical expenses. 
+    1. BPJS V-Claim 
     
-    2. BPJS for Aplicares integration enables efficient management of healthcare services and benefits for BPJS participants. 
+    2. BPJS Aplicares 
     
-    3. BPJS for E-Claim integration facilitates electronic submission of healthcare claims, reducing paperwork and speeding up the claims process. 
+    3. BPJS E-Claim 
     
-    4. Integration with BPJS for JKN Mobile provides patients with access to their healthcare information and benefits through a mobile application. 
+    4. BPJS JKN Mobile 
     
-    5. SISRUTE integration enables healthcare providers to easily access and manage patient referrals. 
+    5. SISRUTE
     
-    6. SIRANAP integration allows for efficient management of inpatient care, including bed management, patient admissions, and discharge processes. 
+    6. SIRANAP 
     
-    7. INACBG'S integration facilitates accurate coding and classification of healthcare services. 
+    7. INACBG'S 
     
-    8. Integration with the Population and Civil Registration Service for NIK/E-KTP enables verification of patient identity. 
+    8. NIK/E-KTP Verification 
     
-    9. Integration with Private Insurance allows for seamless coordination of benefits and claims processing for patients with private insurance coverage. These integrations enhance the efficiency, transparency, and quality of healthcare delivery, ultimately improving the overall patient experience."
+    9. Private Insurance Integration
+    
+    These integrations enhance efficiency, transparency, and healthcare quality, improving the overall patient experience."
 specificationsRight:
   - title: "Report Service"
     subTitle: "Our app features a powerful report service that generates detailed reports on various aspects of healthcare delivery. These reports include patient health outcomes, treatment effectiveness, resource utilization, and compliance with healthcare standards. The reports help healthcare organizations assess their performance, identify areas for improvement, and make data-driven decisions to enhance patient care."

@@ -9,6 +9,7 @@ import HeroSection from "@components/sections/landing/HeroSection.astro";
 import AboutSection from "@components/sections/testimonials/AboutSection.astro";
 import type { CollectionEntry } from "astro:content";
 import { getCollection } from "astro:content";
+import Card from "@/components/ui/cards/Card.astro";
 
 const product: CollectionEntry<"products">[] = (
   await getCollection("products")
@@ -56,6 +57,8 @@ const pageTitle: string = `Home | ${SITE.title}`;
       })
     }
   </section>
+  
+  <Card />
 
   <!-- <TestimonialsSection
     title="Fast-Track Your Projects"
@@ -101,4 +104,4 @@ const pageTitle: string = `Home | ${SITE.title}`;
     subTitle="ScrewFast is an open-source template, meticulously crafted with Astro, Tailwind CSS, and Preline UI frameworks."
     url="https://github.com/mearashadowfax/ScrewFast"
   /> -->
-</>
+</Ca>
