@@ -34,7 +34,7 @@ const product: CollectionEntry<'products'>[] = (await getCollection('products'))
 
 // Define variables for page content
 const title: string = category
-const subTitle = {  
+const subTitle: Record<string, string> = {  
   Banking: "Banking",
   Healthcare: "Healthcare",
   Retail: "Retail",
