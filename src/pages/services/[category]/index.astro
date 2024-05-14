@@ -33,12 +33,24 @@ const product: CollectionEntry<'products'>[] = (await getCollection('products'))
   )
 
 // Define variables for page content
-const title: string = category
-const subTitle: Record<string, string> = {  
-  Banking: "Banking",
-  Healthcare: "Healthcare",
-  Retail: "Retail",
+const title: Record<string, string> = {
+  Banking: "Empower Your Bank with Our Cutting-Edge Banking Solutions",
+  Healthcare: "Transform Your Health with Our Revolutionary Healthcare Solution!",
+  Retail: "Revolutionize Your Retail Business with Our Advanced Solutions",
 }
+const subTitle: Record<string, string> = {  
+  Banking: "Drive Growth and Innovation in Banking",
+  Healthcare: "Discover the Future of Wellness",
+  Retail: "Unlock the Future of Retail",
+}
+const content: Record<string, string> = {
+  Banking:"Elevate your bank’s capabilities with our state-of-the-art solutions, designed to streamline operations, enhance customer experiences, and drive growth. Our comprehensive suite of banking technologies and services is tailored to meet the unique needs of financial institutions, ensuring you stay ahead in a competitive market.",
+  Healthcare:"Experience the pinnacle of health innovation with our cutting-edge healthcare product, designed to elevate your well-being to new heights. Our comprehensive solution blends advanced technology with user-friendly features, ensuring you stay on top of your health effortlessly.",
+  Retail:"Empower your retail business with cutting-edge solutions designed to streamline operations, enhance customer experiences, and drive growth. Our comprehensive suite of retail technologies and services is tailored to meet the unique demands of the industry, ensuring your business stays competitive and innovative.",
+}
+
+const titles = title[category]
+const contents = content[category]
 const subtitle = subTitle[category]
 
 // const testimonials = [
@@ -80,14 +92,21 @@ const pageTitle: string = `${category} | ${SITE.title}`
   <div
     class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 2xl:max-w-full">
     <div class="mb-4 flex items-center justify-center gap-8 sm:mb-8 md:mb-12">
-      <div class="flex flex-col items-center gap-8">
-        <h1 class="text-balance text-2xl font-bold tracking-tight text-desacode-700 dark:text-desacode-700 md:text-4xl md:leading-tight">
-          {title}
+      <div class="flex flex-col items-center gap-1">
+        <h1 class="text-balance max-w-screen-sm text-center text-2xl font-bold tracking-tight text-desacode-700 dark:text-desacode-700 md:text-4xl md:leading-tight">
+          {titles}
         </h1>
         {
           subTitle && (
             <p class="max-w-screen-sm text-pretty text-center text-neutral-600 dark:text-neutral-400 md:block">
               {subtitle}
+            </p>
+          )
+        }
+        {
+          content && (
+            <p class="mt-8 max-w-screen-sm text-pretty text-center text-neutral-600 dark:text-neutral-400 md:block">
+              {contents}
             </p>
           )
         }
