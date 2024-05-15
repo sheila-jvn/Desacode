@@ -1,14 +1,13 @@
 ---
 // Importing necessary functions from Astro
-import { Image } from 'astro:assets';
+import { Image } from 'astro:assets'
 import type { CollectionEntry } from 'astro:content'
 import { getCollection } from 'astro:content'
 
-const { product, src } = Astro.props
+const { product } = Astro.props
 
 interface Props {
-  product: CollectionEntry<"products">;
-  src: any;
+  product: CollectionEntry<'products'>
 }
 ---
 
