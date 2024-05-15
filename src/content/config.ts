@@ -37,6 +37,7 @@ const productsCollection = defineCollection({
           subTitle: z.string(),
         }),
       ),
+      taglist: z.array(z.string()),
       specificationsLeft: z.array(
         z.object({
           title: z.string(),

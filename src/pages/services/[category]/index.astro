@@ -1,6 +1,6 @@
 ---
 // Importing necessary components
-import CardProducts from '@/components/ui/cards/CardProducts.astro'
+import CardTags from '@/components/ui/cards/CardTags.astro'
 import MainLayout from '@/layouts/MainLayout.astro'
 
 // Importing necessary functions from Astro
@@ -122,7 +122,7 @@ const pageTitle: string = `${category} | ${SITE.title}`
     <section class="mt-10 flex flex-wrap items-center justify-center gap-10">
       {
         product.map((product) => {
-          return <CardProducts product={product} />
+          return <CardTags product={product} />
         })
       }
     </section>

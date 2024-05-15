@@ -80,6 +80,9 @@ specificationsRight:
     subTitle: "Our app features a powerful report service that generates detailed reports on various aspects of healthcare delivery. These reports include patient health outcomes, treatment effectiveness, resource utilization, and compliance with healthcare standards. The reports help healthcare organizations assess their performance, identify areas for improvement, and make data-driven decisions to enhance patient care."
   - title: "Executive Dashboard"
     subTitle: "The app includes an executive dashboard that provides a high-level overview of key performance indicators (KPIs) and metrics related to healthcare delivery. The dashboard presents real-time data on patient volumes, resource utilization, revenue generation, and patient satisfaction scores. This enables executives to monitor the health of the organization, identify trends, and make strategic decisions to improve operational efficiency and patient outcomes."
+taglist: 
+  - "satu"
+  - "dua"
 blueprints:
   first: "@/images/blueprint-1.avif"
   second: "@/images/blueprint-2.avif"

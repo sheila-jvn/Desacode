@@ -56,6 +56,8 @@ specificationsRight:
     subTitle: "Patients can easily reschedule or cancel appointments through the SIMEDEASE platform, with flexible rescheduling options and clear cancellation policies, minimizing disruptions to the schedule and optimizing appointment utilization."
   - title: "Multi-channel Communication"
     subTitle: "Patients can schedule appointments and communicate with healthcare providers through multiple channels, such as video conferencing or integrated chat features within the SIMEDEASE platform."
+taglist: 
+  - "satu"
 blueprints:
   first: "@/images/blueprint-1.avif"
   second: "@/images/blueprint-2.avif"

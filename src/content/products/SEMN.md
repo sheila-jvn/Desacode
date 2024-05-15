@@ -50,6 +50,8 @@ specificationsRight:
     subTitle: "Easily integrate with existing systems and platforms for enhanced efficiency and productivity."
   - title: "Effortless Payment"
     subTitle: "Simplify the payment process with quick and easy QR code scanning, eliminating the need for physical cash or cards."
+taglist: 
+  - "satu"
 blueprints:
   first: "@/images/blueprint-1.avif"
   second: "@/images/blueprint-2.avif"

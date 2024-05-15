@@ -59,6 +59,8 @@ specificationsRight:
     subTitle: "Loyalty programs collect valuable data about customer behavior and preferences, which businesses can analyze to gain insights into consumer trends, improve marketing strategies, and enhance the overall customer experience."
   - title: "Feedback Mechanisms"
     subTitle: "Loyalty programs often include mechanisms for collecting feedback from members, such as surveys or review requests. This feedback helps businesses understand customer satisfaction levels and identify areas for improvement."
+taglist: 
+  - "satu"
 blueprints:
   first: "@/images/blueprint-1.avif"
   second: "@/images/blueprint-2.avif"

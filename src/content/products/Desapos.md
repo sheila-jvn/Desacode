@@ -68,6 +68,8 @@ specificationsRight:
     subTitle: "Stay informed and in control with our interactive dashboard. Monitor key metrics, track performance in real-time, and make data-driven decisions with confidence."
   - title: "Software Point Of Sales(SoftPOS)"
     subTitle: "Say goodbye to bulky card readers! Our innovative SoftPOS technology turns smartphones and tablets into fully functional POS terminals, offering convenience and flexibility without the need for external hardware. "
+taglist: 
+  - "satu"
 blueprints:
   first: "@/images/blueprint-1.avif"
   second: "@/images/blueprint-2.avif"
