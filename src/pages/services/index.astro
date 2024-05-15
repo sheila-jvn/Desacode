@@ -3,7 +3,7 @@
 import CardSmallCategory from '@/components/ui/cards/CardSmallCategory.astro'
 import MainLayout from '@/layouts/MainLayout.astro'
 import FeaturesStatsAlt from '@components/sections/features/FeaturesStatsAlt.astro'
-import CardSmall from '@components/ui/cards/CardSmall.astro'
+import Card from '@components/ui/cards/Card.astro'
 
 // Importing necessary functions from Astro
 import { SITE } from '@data/constants'
@@ -26,40 +26,6 @@ const categories = Array.from(
 const title: string = 'Services'
 const subTitle: string =
   'The transformation of all forms of business processes from traditional business processes to digital processes is increasingly rapid, this change occurs because efficiency, effectiveness, security and level of comfort for customers are things that need to be considered in business development in the digital era. Therefore, we participate in the transformation process by providing the following smart solutions.'
-
-// Testimonial data that will be rendered in the component
-// const testimonials = [
-//   // First testimonial data
-//   {
-//     content:
-//       " Since switching to ScrewFast's hardware tools, the efficiency on our construction sites has skyrocketed. The durability of the hex bolts and precision of the machine screws are simply unmatched. It's refreshing to work with a company that truly understands the daily demands of the industry.\" ",
-//     author: "Jason Clark",
-//     role: "Site Foreman | TopBuild",
-//     avatarSrc:
-//       "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
-//     avatarAlt: "Image Description",
-//   },
-//   // Second testimonial data
-//   {
-//     content:
-//       " \"As an interior designer, I'm always looking for high-quality materials and tools that help bring my visions to life. ScrewFast's mixed screws assortment has been a game-changer for my projects, providing the perfect blend of quality and variety. The outstanding customer support was just the cherry on top!\" ",
-//     author: "Maria Gonzalez",
-//     role: "Interior Designer | Creative Spaces",
-//     avatarSrc:
-//       "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
-//     avatarAlt: "Image Description",
-//   },
-//   // Third testimonial data
-//   {
-//     content:
-//       " \"I’ve been a professional carpenter for over 15 years, and I can sincerely say that ScrewFast’s tap bolts and nuts are some of the best I've used. They grip like no other, and I have full confidence in every joint and fixture. Plus, the service is impeccable – they truly care about my project's success.\" ",
-//     author: "Richard Kim",
-//     role: "Master Carpenter | WoodWright",
-//     avatarSrc:
-//       "https://images.unsplash.com/photo-1474176857210-7287d38d27c6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
-//     avatarAlt: "Image Description",
-//   },
-// ];
 const pageTitle: string = `Products | ${SITE.title}`
 ---
 
@@ -81,35 +47,20 @@ const pageTitle: string = `Products | ${SITE.title}`
         }
       </div>
     </div>
-    <h1
-      class="text-balance text-center text-2xl font-bold tracking-tight text-desacode-700 dark:text-desacode-700 md:text-4xl md:leading-tight">
-      Our Products
-    </h1>
-    <!--Displaying products in alternating styles. Alternative product gets different card styling.-->
-    <!--Maps through all product entries and displays them with either CardSmall or CardWide based on their position.-->
-    <section class="mt-10 flex flex-wrap items-center justify-center gap-10">
-      {
-        categories.map((category) => {
-          return (
-            <CardSmallCategory
-              src={`/Desacode/${category}.webp`}
-              alt=''
-              href={`/Desacode/services/${category}`}
-              content={category}
-            />
-          )
-        })
-      }
-    </section>
   </div>
-  <!--Features statistics section-->
+  <h1
+    class="text-balance text-center text-2xl font-bold tracking-tight text-desacode-700 dark:text-desacode-700 md:text-4xl md:leading-tight">
+    Our Products
+  </h1>
+  <section class="mt-10 flex flex-wrap items-center justify-center gap-10">
+    {
+      categories.map((category) => {
+        return <Card category={category} />
+      })
+    }
+  </section>
   <FeaturesStatsAlt
     title="Why Desacode?"
     subTitle="Desacode participates in changing conventional business processes towards digitalization by utilizing technology which often seems expensive and complicates the business process itself. Our solutions are here to help reduce the costs of effective software development, ensuring the technology worked so well and increased revenue in the business that views on the use of expensive and ineffective software have changed."
   />
-  <!--Testimonials section-->
-  <!-- <TestimonialsSectionAlt
-    title="What Our Customers Say"
-    testimonials={testimonials}
-  /> -->
 </MainLayout>

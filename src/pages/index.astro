@@ -1,107 +1,44 @@
 ---
 // Import the necessary components
-import ClientsSection from '@/components/sections/landing/ClientsSection.astro';
-import CardSmallCategory from '@/components/ui/cards/CardSmallCategory.astro';
-import { SITE } from "@/data_files/constants";
-import MainLayout from "@/layouts/MainLayout.astro";
-import FeaturesGeneral from "@components/sections/features/FeaturesGeneral.astro";
-import HeroSection from "@components/sections/landing/HeroSection.astro";
-import AboutSection from "@components/sections/testimonials/AboutSection.astro";
-import type { CollectionEntry } from "astro:content";
-import { getCollection } from "astro:content";
-import Card from "@/components/ui/cards/Card.astro";
+import ClientsSection from '@/components/sections/landing/ClientsSection.astro'
+import CardSmallCategory from '@/components/ui/cards/CardSmallCategory.astro'
+import { SITE } from '@/data_files/constants'
+import MainLayout from '@/layouts/MainLayout.astro'
+import FeaturesGeneral from '@components/sections/features/FeaturesGeneral.astro'
+import HeroSection from '@components/sections/landing/HeroSection.astro'
+import AboutSection from '@components/sections/testimonials/AboutSection.astro'
+import type { CollectionEntry } from 'astro:content'
+import { getCollection } from 'astro:content'
+import Card from '@/components/ui/cards/Card.astro'
 
-const product: CollectionEntry<"products">[] = (
-  await getCollection("products")
+const product: CollectionEntry<'products'>[] = (
+  await getCollection('products')
 ).sort(
-  (a: CollectionEntry<"products">, b: CollectionEntry<"products">) =>
+  (a: CollectionEntry<'products'>, b: CollectionEntry<'products'>) =>
     a.data.main.id - b.data.main.id
-);
+)
 
 const categories = Array.from(
   new Set(product.map((product) => product.data.category))
 )
 
-const pageTitle: string = `Home | ${SITE.title}`;
+const pageTitle: string = `Home | ${SITE.title}`
 ---
 
 <MainLayout title={pageTitle}>
   <HeroSection />
-
-  <ClientsSection
-    title="Our Partners"
-    subTitle=" "
-  />
-
+  <ClientsSection title="Our Partners" subTitle=" " />
   <AboutSection />
-
   <FeaturesGeneral />
-
   <h2
-    class="text-balance px-4 py-10 pt-24 text-center text-3xl font-bold text-desacode-700 dark:text-desacode-600 lg:text-4xl"
-  >
+    class="text-balance px-4 py-10 pt-24 text-center text-3xl font-bold text-desacode-700 dark:text-desacode-600 lg:text-4xl">
     Our Products
   </h2>
-
   <section class="mt-10 flex flex-wrap items-center justify-center gap-10">
     {
       categories.map((category) => {
-        return (
-          <CardSmallCategory
-            src={`/Desacode/${category}.webp`}
-            alt=''
-            href={`/Desacode/services/${category}`}
-            content={category}
-          />
-        )
+        return <Card category={category} />
       })
     }
   </section>
-  
-  <Card />
-
-  <!-- <TestimonialsSection
-    title="Fast-Track Your Projects"
-    subTitle="At ScrewFast, we ensure a swift start with instant account setup. Experience the speed of construction redefined."
-    ;
-    testimonials={[
-      {
-        content:
-          "ScrewFast dramatically boosted our project efficiency. Setup was instant, and their rapid response times are phenomenal. Truly a game-changer in hardware and construction support!",
-        author: "Samantha Ruiz",
-        role: "Chief Operating Officer | ConstructIt Inc.",
-        avatarSrc:
-          "https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?q=80&w=1453&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
-      },
-    ]}
-    statistics={[
-      {
-        count: "70k+",
-        description:
-          "customers equipped — from DIY to major construction firms",
-      },
-      {
-        count: "35%",
-        description:
-          "uptick in project efficiency with ScrewFast tools and services",
-      },
-      {
-        count: "15.3%",
-        description:
-          "reduction in maintenance costs reported by long-term clients",
-      },
-      {
-        count: "2x",
-        description: "quicker assembly using innovative fastening solutions",
-      },
-    ]}
-  /> -->
-
-  <!-- <FAQ title="Frequently<br />asked questions" faqs={faqs} /> -->
-
-  <!-- <HeroSectionAlt
-    title="Let's Build Together"
-    subTitle="ScrewFast is an open-source template, meticulously crafted with Astro, Tailwind CSS, and Preline UI frameworks."
-    url="https://github.com/mearashadowfax/ScrewFast"
-  /> -->
-</Ca>
+</MainLayout>

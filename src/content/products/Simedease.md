@@ -7,7 +7,7 @@ main:
   content: |
     SIMEDEASE increases the accessibility of healthcare services through virtual consultations, providing benefits to patients with limited mobility, underserved communities, and remote areas. This optimizes medication management for patients, while expanding the reach of healthcare providers and increasing patient engagement.
   imgCard: "@/images/simedease.webp"
-  imgMain: "@/images/product-image-main-1.avif"
+  imgMain: "@/images/product-simedease.svg"
   imgAlt: "Mockup boxes of machine screws set"
   downloadUrl: "/Desacode/brochure/Simedise%20Brochure.pdf"
 tabs:

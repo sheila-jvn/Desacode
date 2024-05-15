@@ -1,0 +1,106 @@
+---
+// Importing necessary functions from Astro
+import type { CollectionEntry } from 'astro:content'
+import { getCollection } from 'astro:content'
+
+const { category } = Astro.props
+
+interface Props {
+  category: string
+}
+
+const product: CollectionEntry<'products'>[] = (await getCollection('products'))
+  .filter((product) => product.data.category === category)
+  .sort(
+    (a: CollectionEntry<'products'>, b: CollectionEntry<'products'>) =>
+      a.data.main.id - b.data.main.id
+  )
+---
+
+<style>
+  .card {
+    background: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    max-width: 400px;
+    margin: auto;
+  }
+
+  .card img {
+    width: 100%;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .card .tags {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: -1rem;
+    padding: 0.5rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .card .tag {
+    @apply bg-desacode-700;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    font-weight: bold;
+  }
+
+  .card .content {
+    padding: 1rem;
+  }
+
+  .card .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .card .description {
+    font-size: 1rem;
+    color: #666;
+  }
+</style>
+
+<div class="card mt-10">
+  <a
+    class="h-50 group grid grid-cols-1 grid-rows-1 overflow-hidden"
+    href={`/Desacode/services/${category}`}
+    ><img
+      class="col-start-1 row-start-1 transition-transform duration-700 ease-out group-hover:scale-110"
+      src={`/Desacode/${category}.webp`}
+      alt=""
+      draggable={'false'}
+    />
+    <span
+      class="relative z-10 col-start-1 row-start-1 text-sm font-bold text-neutral-50 md:text-lg"
+      >{category}</span
+    >
+  </a>
+  <div class="tags">
+    {
+      product.map((product) => {
+        return (
+          <a
+            href={`/Desacode/services/${product.data.category}/${product.slug}`}
+            class="tag">
+            {product.data.title}
+          </a>
+        )
+      })
+    }
+  </div>
+  <div class="content">
+    <div class="title">Catat dan Kelola Semua Transaksi dari Satu Aplikasi</div>
+    <div class="description">
+      Maksimalkan keuntungan dengan pengelolaan penjualan, keuangan, dan
+      inventori.
+    </div>
+  </div>
+</div>

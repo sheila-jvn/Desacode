@@ -71,9 +71,9 @@ const homeUrl = Astro.currentLocale === "fr" ? "/fr" : "/Desacode";
         </button>
       </div>
       <!-- ThemeIcon component specifically for smaller screens -->
-      <span class="inline-block md:hidden">
+      <!-- <span class="inline-block md:hidden">
         <ThemeIcon />
-      </span>
+      </span> -->
     </div>
     <!-- Contains navigation links -->
     <div
@@ -90,15 +90,15 @@ const homeUrl = Astro.currentLocale === "fr" ? "/fr" : "/Desacode";
         ))}
         <!-- <LanguagePicker /> -->
         <!-- ThemeIcon component specifically for larger screens -->
-        <span class="hidden md:inline-block">
+        <!-- <span class="hidden md:inline-block">
           <ThemeIcon />
-        </span>
+        </span> -->
       </div>
     </div>
   </nav>
 </header>
 <!-- Theme Appearance script to manage light/dark modes -->
-<script is:inline>
+<!-- <script is:inline>
   const HSThemeAppearance = {
     init() {
       const defaultTheme = "default";
@@ -201,7 +201,7 @@ const homeUrl = Astro.currentLocale === "fr" ? "/fr" : "/Desacode";
       });
     });
   });
-</script>
+</script> -->
 <!--Import the necessary Collapse and Overlay plugins-->
 <!--https://preline.co/plugins/html/collapse.html-->
 <!--https://preline.co/plugins/html/overlay.html-->
