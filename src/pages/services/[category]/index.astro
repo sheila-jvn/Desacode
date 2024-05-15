@@ -1,8 +1,7 @@
 ---
 // Importing necessary components
+import CardProducts from '@/components/ui/cards/CardProducts.astro'
 import MainLayout from '@/layouts/MainLayout.astro'
-import FeaturesStatsAlt from '@components/sections/features/FeaturesStatsAlt.astro'
-import CardSmall from '@components/ui/cards/CardSmall.astro'
 
 // Importing necessary functions from Astro
 import { SITE } from '@data/constants'
@@ -31,6 +30,10 @@ const product: CollectionEntry<'products'>[] = (await getCollection('products'))
     (a: CollectionEntry<'products'>, b: CollectionEntry<'products'>) =>
       a.data.main.id - b.data.main.id
   )
+
+const categories = Array.from(
+  new Set(product.map((product) => product.data.category))
+)
 
 // Define variables for page content
 const title: Record<string, string> = {
@@ -118,15 +121,10 @@ const pageTitle: string = `${category} | ${SITE.title}`
     </h1>
     <section class="mt-10 flex flex-wrap items-center justify-center gap-10">
       {
-        product.map((product, index) => {
-          return <CardSmall product={product} />
+        product.map((product) => {
+          return <CardProducts product={product} />
         })
       }
     </section>
   </div>
-  <!--Testimonials section-->
-  <!-- <TestimonialsSectionAlt
-    title="What Our Customers Say"
-    testimonials={testimonials}
-  /> -->
 </MainLayout>

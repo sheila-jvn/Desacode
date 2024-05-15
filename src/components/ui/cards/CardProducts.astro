@@ -1,20 +1,15 @@
 ---
 // Importing necessary functions from Astro
+import { Image } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content'
 import { getCollection } from 'astro:content'
 
-const { category } = Astro.props
+const { product, src } = Astro.props
 
 interface Props {
-  category: string
+  product: CollectionEntry<"products">;
+  src: any;
 }
-
-const product: CollectionEntry<'products'>[] = (await getCollection('products'))
-  .filter((product) => product.data.category === category)
-  .sort(
-    (a: CollectionEntry<'products'>, b: CollectionEntry<'products'>) =>
-      a.data.main.id - b.data.main.id
-  )
 ---
 
 <style>
@@ -71,36 +66,25 @@ const product: CollectionEntry<'products'>[] = (await getCollection('products'))
 <div class="card mt-10">
   <a
     class="h-50 group grid grid-cols-1 grid-rows-1 overflow-hidden"
-    href={`/Desacode/services/${category}`}
-    ><img
+    href={`/Desacode/services/${product.data.category}/${product.slug}`}
+    ><Image
       class="col-start-1 row-start-1 transition-transform duration-700 ease-out group-hover:scale-110"
-      src={`/Desacode/${category}.webp`}
+      src={product.data.main.imgCard}
       alt=""
       draggable={'false'}
     />
-    <span
+    <!-- <span
       class="relative z-10 col-start-1 row-start-1 text-sm font-bold text-neutral-50 md:text-lg"
       >{category}</span
-    >
+    > -->
   </a>
   <div class="tags">
-    {
-      product.map((product) => {
-        return (
-          <a
-            href={`/Desacode/services/${product.data.category}/${product.slug}`}
-            class="tag">
-            {product.data.title}
-          </a>
-        )
-      })
-    }
+    <div class="tag">Satu</div>
+    <div class="tag">Dua</div>
+    <div class="tag">Tiga</div>
   </div>
   <div class="content">
-    <div class="title">Catat dan Kelola Semua Transaksi dari Satu Aplikasi</div>
-    <div class="description">
-      Maksimalkan keuntungan dengan pengelolaan penjualan, keuangan, dan
-      inventori.
-    </div>
+    <div class="title">nbjdhsabjx</div>
+    <div class="description">skncks</div>
   </div>
 </div>

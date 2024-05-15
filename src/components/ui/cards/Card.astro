@@ -15,6 +15,26 @@ const product: CollectionEntry<'products'>[] = (await getCollection('products'))
     (a: CollectionEntry<'products'>, b: CollectionEntry<'products'>) =>
       a.data.main.id - b.data.main.id
   )
+
+  const title: Record<string, string> = {
+  Banking: "Empower Your Bank with Our Cutting-Edge Banking Solutions",
+  Healthcare: "Transform Your Health with Our Revolutionary Healthcare Solution!",
+  Retail: "Revolutionize Your Retail Business with Our Advanced Solutions",
+}
+const subTitle: Record<string, string> = {  
+  Banking: "Drive Growth and Innovation in Banking",
+  Healthcare: "Discover the Future of Wellness",
+  Retail: "Unlock the Future of Retail",
+}
+const content: Record<string, string> = {
+  Banking:"Elevate your bank’s capabilities with our state-of-the-art solutions, designed to streamline operations, enhance customer experiences, and drive growth. Our comprehensive suite of banking technologies and services is tailored to meet the unique needs of financial institutions, ensuring you stay ahead in a competitive market.",
+  Healthcare:"Experience the pinnacle of health innovation with our cutting-edge healthcare product, designed to elevate your well-being to new heights. Our comprehensive solution blends advanced technology with user-friendly features, ensuring you stay on top of your health effortlessly.",
+  Retail:"Empower your retail business with cutting-edge solutions designed to streamline operations, enhance customer experiences, and drive growth. Our comprehensive suite of retail technologies and services is tailored to meet the unique demands of the industry, ensuring your business stays competitive and innovative.",
+}
+
+const titles = title[category]
+const contents = content[category]
+const subtitle = subTitle[category]
 ---
 
 <style>
@@ -25,6 +45,7 @@ const product: CollectionEntry<'products'>[] = (await getCollection('products'))
     overflow: hidden;
     text-align: center;
     max-width: 400px;
+    height: 600px;
     margin: auto;
   }
 
@@ -97,10 +118,7 @@ const product: CollectionEntry<'products'>[] = (await getCollection('products'))
     }
   </div>
   <div class="content">
-    <div class="title">Catat dan Kelola Semua Transaksi dari Satu Aplikasi</div>
-    <div class="description">
-      Maksimalkan keuntungan dengan pengelolaan penjualan, keuangan, dan
-      inventori.
-    </div>
+    <div class="title">{titles}</div>
+    <div class="description">{contents}</div>
   </div>
 </div>
