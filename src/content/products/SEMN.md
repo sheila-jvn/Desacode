@@ -2,6 +2,7 @@
 title: "SolveEase TradeStream"
 description: "Banking"
 category: "Banking"
+layout: "left"
 main:
   id: 3
   content: |
@@ -23,6 +24,7 @@ longDescription:
     Welcome to TradeStream, the ultimate solution for streamlined payment management. Seamlessly integrating cutting-edge technology with user-friendly features, TradeStream is here to revolutionize how you manage your transactions. Explore the key features and benefits below to discover the power of TradeStream.
   btnTitle: "Contact sales to learn more"
   btnURL: "/Desacode/contact"
+  bottomImage: "@/images/bottomImage-Tradestream.png"
 descriptionList:
   - title: "Efficiency in your business "
     subTitle: "Meet the challenge head-on with our Merchant Management app. In today's fast-paced digital world, meeting payment demands is tough, but fear not. Our solution streamlines your business operations, offering intuitive features to manage inventory, orders, and customers efficiently. Tailored payment options, from traditional POS to cutting-edge SoftPOS and QR-based transactions, simplify complexity and elevate efficiency."

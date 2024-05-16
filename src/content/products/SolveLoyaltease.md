@@ -2,12 +2,13 @@
 title: "Solve Loyaltease"
 description: "Banking"
 category: "Banking"
+layout: "left"
 main:
   id: 4
   content: |
     Loyalty app offers personalized rewards, seamless communication, and insightful analytics to help businesses build lasting relationships with customers and maximize profits. With tailored incentives, seamless integration, targeted promotions, and real-time analytics.
   imgCard: "@/images/SolveLoyaltease.webp"
-  imgMain: "@/images/product-image-main-4.avif"
+  imgMain: "@/images/product-loyaltease.svg"
   imgAlt: "Mockup boxes of hex bolts"
 tabs:
   - id: "tabs-with-card-item-1"
@@ -22,6 +23,7 @@ longDescription:
     Unlock the power of customer loyalty with Solve Loyaltease—the ultimate solution for businesses seeking to enhance customer engagement and drive repeat purchases. Our cutting-edge loyalty app solutions are tailored to meet the unique needs of your business, helping you build lasting relationships with your customers and maximize your bottom line.
   btnTitle: "Contact sales to learn more"
   btnURL: "/Desacode/contact"
+  bottomImage: "@/images/bottomImage-Loyaltease.png"
 descriptionList:
   - title: "Tailored Incentives"
     subTitle: "Elevate Customer Engagement Through Personalized Rewards At Loyaltease, we understand that one size does not fit all when it comes to incentivizing customer loyalty. That's why we offer Tailored Incentives, a sophisticated approach to reward programs that allows you to craft personalized rewards uniquely suited to each individual customer. With Tailored Incentives, you have the power to analyze customer behavior, preferences, and purchase history to create rewards that resonate on a personal level. Whether it's a special discount on their favorite product, a freebie they've had their eye on, or an exclusive invitation to a VIP event, you can ensure that every reward feels meaningful and relevant to the recipient."

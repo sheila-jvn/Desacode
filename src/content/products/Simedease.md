@@ -2,12 +2,13 @@
 title: "SIMEDEASE"
 description: "Healthcare"
 category: "Healthcare"
+layout: "left"
 main:
   id: 5
   content: |
     SIMEDEASE increases the accessibility of healthcare services through virtual consultations, providing benefits to patients with limited mobility, underserved communities, and remote areas. This optimizes medication management for patients, while expanding the reach of healthcare providers and increasing patient engagement.
   imgCard: "@/images/simedease.webp"
-  imgMain: "@/images/product-simedease.svg"
+  imgMain: "@/images/product-simedease.png"
   imgAlt: "Mockup boxes of machine screws set"
   downloadUrl: "/Desacode/brochure/Simedise%20Brochure.pdf"
 tabs:
@@ -24,6 +25,7 @@ longDescription:
 
   btnTitle: "Contact sales to learn more"
   btnURL: "/Desacode/contact"
+  bottomImage: "@/images/bottomImage-Simedease.png"
 descriptionList:
   - title: "Experience healthcare in a new light with SIMEDEASE"
     subTitle: "Bridge the gap in healthcare access and empower underserved populations with SIMEDEASE. Whether you're in a rural area or a bustling city, SIMEDEASE ensures that everyone has access to the care they need, when they need it. In the fast-paced world of healthcare, ensures equitable access to care  regardless of geographical barriers. SIMEDEASE allows healthcare providers to deliver exceptional care, patients to receive convenient access to services, and communities to thrive with improved health outcomes."

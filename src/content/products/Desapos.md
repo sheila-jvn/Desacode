@@ -2,6 +2,7 @@
 title: "DesaPOS"
 description: "Retail" 
 category: "Retail" 
+layout: "left"
 main:
   id: 2
   content: |
@@ -23,6 +24,7 @@ longDescription:
     In today's fast-paced retail environment, staying ahead of the competition is essential. Our POS system evolves with your business, offering scalability, flexibility, and advanced features to meet your unique needs. Embrace innovation and future-proof your business with our cutting-edge solution.
   btnTitle: "Contact sales to learn more"
   btnURL: "/Desacode/contact"
+  bottomImage: "@/images/bottomImage-Desapos.png"
 descriptionList:
   - title: "Introducing SolveEase QuickCharge: Streamline Sales, Amplify Success with Our POS Solutions."
     subTitle: "At DesaCode, we understand the challenges that come with managing a successful retail operation. That's why we've developed cutting-edge Point of Sale (POS) solutions designed to streamline your business processes, boost sales, and enhance customer satisfaction."
@@ -69,7 +71,9 @@ specificationsRight:
   - title: "Software Point Of Sales(SoftPOS)"
     subTitle: "Say goodbye to bulky card readers! Our innovative SoftPOS technology turns smartphones and tablets into fully functional POS terminals, offering convenience and flexibility without the need for external hardware. "
 taglist: 
-  - "satu"
+  - "Website"
+  - "Customer Platform"
+  - "Mobile"
 blueprints:
   first: "@/images/blueprint-1.avif"
   second: "@/images/blueprint-2.avif"

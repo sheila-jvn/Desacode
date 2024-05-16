@@ -2,7 +2,7 @@
 // Importing necessary functions from Astro
 import { Image } from 'astro:assets'
 import type { CollectionEntry } from 'astro:content'
-import { getCollection } from 'astro:content'
+import { determineTagColor } from '../../../helper/bgTagList'
 
 const { product } = Astro.props
 
@@ -14,7 +14,7 @@ interface Props {
 <style>
   .card {
     background: #ffffff;
-    border-radius: 1rem;
+    border-radius: 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-align: center;
@@ -35,15 +35,19 @@ interface Props {
     padding: 0.5rem;
     position: relative;
     z-index: 1;
+    padding-top: 2rem;
+    border-radius: 30px;
+    transform: translateY(-10px)
   }
 
   .card .tag {
-    @apply bg-desacode-700;
     color: #fff;
-    padding: 0.5rem 1rem;
+    padding: 0.1rem 1rem;
     border-radius: 1rem;
     font-size: 0.875rem;
     font-weight: bold;
+    display: grid;
+    place-content: center;
   }
 
   .card .content {
@@ -73,15 +77,10 @@ interface Props {
       draggable={'false'}
     />
   </a>
-  <div class="tags">
+  <div class="tags bg-white w-full rounded-[1rem]">
     {
       product.data.taglist.map((tag) => {
-        return (
-          <div
-            class="tag">
-            {tag}
-          </div>
-        )
+        return <div class:list={['tag', determineTagColor(tag)]}>{tag}</div>
       })
     }
   </div>

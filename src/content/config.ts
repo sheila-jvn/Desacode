@@ -30,6 +30,7 @@ const productsCollection = defineCollection({
         subTitle: z.string(),
         btnTitle: z.string(),
         btnURL: z.string(),
+        bottomImage: image(),
       }),
       descriptionList: z.array(
         z.object({
@@ -38,6 +39,7 @@ const productsCollection = defineCollection({
         }),
       ),
       taglist: z.array(z.string()),
+      layout: z.string(),
       specificationsLeft: z.array(
         z.object({
           title: z.string(),

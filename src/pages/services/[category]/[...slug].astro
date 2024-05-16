@@ -25,6 +25,15 @@ export async function getStaticPaths() {
 const { product } = Astro.props
 
 const pageTitle: string = `${product.data.title} | ${SITE.title}`
+let containerClass = ''
+let imageClass = ''
+if (product.data.layout === 'right') {
+  containerClass = 'flex-col-reverse sm:flex-row-reverse'
+  imageClass = 'relative left-[-4rem]'
+} else if (product.data.layout === 'left') {
+  containerClass = 'flex-col sm:flex-row'
+  imageClass = 'relative right-[-6rem]'
+}
 ---
 
 <MainLayout title={pageTitle}>
@@ -32,17 +41,18 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`
   </div>
 
   <section
-    class="mx-auto flex max-w-[85rem] flex-col px-4 py-10 sm:px-6 lg:px-8 lg:py-14 2xl:max-w-full">
-    <div>
-      <p
-        id="fadeText"
-        class="mb-8 max-w-prose text-pretty font-light text-neutral-700 dark:text-neutral-300 sm:text-xl">
-        {product.data.main.content}
-      </p>
-    </div>
+    class="mx-auto flex max-w-[85rem] flex-col px-4 py-10 sm:px-6 lg:px-8 lg:py-10 2xl:max-w-full">
     <div
-      class="flex flex-col items-center justify-between space-y-4 sm:flex-row sm:space-y-0">
+      class:list={[
+        'flex justify-between space-y-4 sm:space-y-0',
+        containerClass
+      ]}>
       <div id="fadeInUp">
+        <p
+          id="fadeText"
+          class="mb-8 max-w-prose text-pretty font-light text-neutral-700 dark:text-neutral-300 sm:text-xl">
+          {product.data.main.content}
+        </p>
         <h1
           class="block text-4xl font-bold tracking-tighter text-neutral-800 dark:text-neutral-200 sm:text-5xl md:text-6xl lg:text-7xl">
           {product.data.title}
@@ -50,6 +60,7 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`
         <p class="text-lg text-neutral-600 dark:text-neutral-400">
           {product.data.description}
         </p>
+
         {
           product.data.main.downloadUrl && (
             <p class="mt-5">
@@ -65,7 +76,7 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`
         <Image
           id="fadeInMoveRight"
           src={product.data.main.imgMain}
-          class="w-[600px]"
+          class:list={['w-[600px]', imageClass]}
           alt={product.data.main.imgAlt}
           format={'avif'}
           loading={'eager'}
@@ -110,6 +121,14 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`
                   url={product.data.longDescription.btnURL}
                 />
               </p>
+              <Image
+                id="fadeInMoveRight"
+                src={product.data.longDescription.bottomImage}
+                class= 'w-[600px] mt-20'
+                alt=""
+                format={'avif'}
+                loading={'eager'}
+              />
             </div>
 
             <div class="space-y-6 lg:space-y-10">

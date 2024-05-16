@@ -2,12 +2,13 @@
 title: "Smartmedic+"
 description: "Healthcare"
 category: "Healthcare"
+layout: 'right'
 main:
   id: 1
   content: |
     A smart solution for hospital management needs, with a front office and back office interface we provide complete services and meet aspects of customer needs and internal hospital management.
   imgCard: "@/images/Smartmedic.webp"
-  imgMain: "@/images/product-image-main-1.avif"
+  imgMain: "@/images/product-smartmedic.svg"
   imgAlt: "Mockup boxes of machine screws set"
   downloadUrl: "/Desacode/brochure/Brochure%20Smartmedic%20Redesain%20Indo.pdf"
 tabs:
@@ -30,6 +31,7 @@ longDescription:
 
   btnTitle: "Contact sales to learn more"
   btnURL: "/Desacode/contact"
+  bottomImage: "@/images/bottomImage-Smartmedic.png"
 descriptionList:
   - title: "Solution for all"
     subTitle: "We provide comprehensive services in hospital management processes starting from diagnostic services and patient procedures, medical records, pharmacy, pharmacy warehouse, billing, employee payroll, accounting processes to management control."
@@ -81,8 +83,9 @@ specificationsRight:
   - title: "Executive Dashboard"
     subTitle: "The app includes an executive dashboard that provides a high-level overview of key performance indicators (KPIs) and metrics related to healthcare delivery. The dashboard presents real-time data on patient volumes, resource utilization, revenue generation, and patient satisfaction scores. This enables executives to monitor the health of the organization, identify trends, and make strategic decisions to improve operational efficiency and patient outcomes."
 taglist: 
-  - "satu"
-  - "dua"
+  - "Website"
+  - "Customer Platform"
+  - "Mobile"
 blueprints:
   first: "@/images/blueprint-1.avif"
   second: "@/images/blueprint-2.avif"
