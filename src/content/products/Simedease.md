@@ -57,7 +57,7 @@ specificationsRight:
   - title: "Multi-channel Communication"
     subTitle: "Patients can schedule appointments and communicate with healthcare providers through multiple channels, such as video conferencing or integrated chat features within the SIMEDEASE platform."
 taglist: 
-  - "satu"
+  - "tiga"
 blueprints:
   first: "@/images/blueprint-1.avif"
   second: "@/images/blueprint-2.avif"
