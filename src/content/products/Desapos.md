@@ -2,7 +2,7 @@
 title: "DesaPOS"
 description: "Retail" 
 category: "Retail" 
-layout: "left"
+heroLayout: "left"
 main:
   id: 2
   content: |

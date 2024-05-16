@@ -2,7 +2,7 @@
 title: "SIMEDEASE"
 description: "Healthcare"
 category: "Healthcare"
-layout: "left"
+heroLayout: "left"
 main:
   id: 5
   content: |

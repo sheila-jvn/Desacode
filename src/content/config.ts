@@ -39,7 +39,7 @@ const productsCollection = defineCollection({
         }),
       ),
       taglist: z.array(z.string()),
-      layout: z.string(),
+      heroLayout: z.string(),
       specificationsLeft: z.array(
         z.object({
           title: z.string(),

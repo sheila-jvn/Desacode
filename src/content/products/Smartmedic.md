@@ -2,7 +2,7 @@
 title: "Smartmedic+"
 description: "Healthcare"
 category: "Healthcare"
-layout: 'right'
+heroLayout: 'right'
 main:
   id: 1
   content: |

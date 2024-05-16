@@ -27,10 +27,10 @@ const { product } = Astro.props
 const pageTitle: string = `${product.data.title} | ${SITE.title}`
 let containerClass = ''
 let imageClass = ''
-if (product.data.layout === 'right') {
+if (product.data.heroLayout === 'right') {
   containerClass = 'flex-col-reverse sm:flex-row-reverse'
   imageClass = 'relative left-[-4rem]'
-} else if (product.data.layout === 'left') {
+} else if (product.data.heroLayout === 'left') {
   containerClass = 'flex-col sm:flex-row'
   imageClass = 'relative right-[-6rem]'
 }
@@ -124,7 +124,7 @@ if (product.data.layout === 'right') {
               <Image
                 id="fadeInMoveRight"
                 src={product.data.longDescription.bottomImage}
-                class= 'w-[600px] mt-20'
+                class="mt-20 w-[600px]"
                 alt=""
                 format={'avif'}
                 loading={'eager'}
