@@ -2,6 +2,7 @@
 // Importing necessary functions from Astro
 import type { CollectionEntry } from 'astro:content'
 import { getCollection } from 'astro:content'
+import { determineTagColor2 } from '../../../helper/bgTagList'
 
 const { category } = Astro.props
 
@@ -40,7 +41,7 @@ const subtitle = subTitle[category]
 <style>
   .card {
     background: #ffffff;
-    border-radius: 1rem;
+    border-radius: 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-align: center;
@@ -62,15 +63,19 @@ const subtitle = subTitle[category]
     padding: 0.5rem;
     position: relative;
     z-index: 1;
+    padding-top: 2rem;
+    border-radius: 30px;
+    transform: translateY(-10px)
   }
 
   .card .tag {
-    @apply bg-desacode-700;
     color: #fff;
-    padding: 0.5rem 1rem;
+    padding: 0.1rem 1rem;
     border-radius: 1rem;
     font-size: 0.875rem;
     font-weight: bold;
+    display: grid;
+    place-content: center;
   }
 
   .card .content {
@@ -104,13 +109,13 @@ const subtitle = subTitle[category]
       >{category}</span
     > -->
   </a>
-  <div class="tags">
+  <div class="tags bg-white w-full rounded-[1rem]">
     {
       product.map((product) => {
         return (
           <a
             href={`/Desacode/services/${product.data.category}/${product.slug}`}
-            class="tag">
+            class:list={['tag', determineTagColor2(product.data.title)]}>
             {product.data.title}
           </a>
         )
