@@ -26,6 +26,9 @@ importers:
       '@astrojs/vercel':
         specifier: ^7.6.0
         version: 7.6.0(astro@4.8.3(typescript@5.4.5))
+      '@iconify-json/material-symbols':
+        specifier: ^1.1.80
+        version: 1.1.80
       '@iconify-json/mdi':
         specifier: ^1.1.66
         version: 1.1.66
@@ -578,6 +581,9 @@ packages:
 
   '@expressive-code/plugin-text-markers@0.35.3':
     resolution: {integrity: sha512-gDdnQrfDRXw5Y+PKHJDkpAUdf2pthYOthGcgy3JB8GOTQ3EL1h+755Ct/bGc4MR6jn+dgnQP47uHMWQaccvN6Q==}
+
+  '@iconify-json/material-symbols@1.1.80':
+    resolution: {integrity: sha512-JrDMmWeHxFFMp3BBSsjvDvSiYzJ0qdYmHAQYWY/L5fxVZcIoeoQvtQR0wM1iJN4UDIsnHwbpJQ/sqZ/cvph6sw==}
 
   '@iconify-json/mdi@1.1.66':
     resolution: {integrity: sha512-7KPF2RVUUWav/hXCM8Ti/smqu3cmgePJpiX9CSkldiL+80+eBRBeKlc4vPOc9jhAItlqIU1vKsbKoPP0JIfgbg==}
@@ -3679,6 +3685,10 @@ snapshots:
   '@expressive-code/plugin-text-markers@0.35.3':
     dependencies:
       '@expressive-code/core': 0.35.3
+
+  '@iconify-json/material-symbols@1.1.80':
+    dependencies:
+      '@iconify/types': 2.0.0
 
   '@iconify-json/mdi@1.1.66':
     dependencies:

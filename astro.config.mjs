@@ -23,11 +23,7 @@ export default defineConfig({
   },
   prefetch: true,
   integrations: [
-    icon({
-      include: {
-        mdi: "*",
-      },
-    }),
+    icon(),
     tailwind(),
     sitemap({
       i18n: {

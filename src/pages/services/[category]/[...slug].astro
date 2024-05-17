@@ -6,6 +6,7 @@ import PrimaryCTA from '@components/ui/buttons/PrimaryCTA.astro'
 import { Image } from 'astro:assets'
 import { getCollection } from 'astro:content'
 import { SITE } from '@data/constants'
+import { Icon } from 'astro-icon/components'
 
 // Global declaration for gsap animation library
 declare global {
@@ -157,13 +158,16 @@ if (product.data.heroLayout === 'right') {
             <div class="max-w-md space-y-6">
               {
                 product.data.specificationsLeft.map((spec) => (
-                  <div>
-                    <h3 class="block font-bold text-neutral-800 dark:text-neutral-200">
-                      {spec.title}
-                    </h3>
-                    <p class="text-neutral-600 dark:text-neutral-400">
-                      <span class="whitespace-pre-wrap">{spec.subTitle}</span>
-                    </p>
+                  <div class="grid grid-cols-[auto,1fr]">
+                    {/* <Icon name={spec.icon} class="mt-1 w-[50px]" /> */}
+                    <div class="flex flex-col">
+                      <h3 class="block font-bold text-neutral-800 dark:text-neutral-200">
+                        {spec.title}
+                      </h3>
+                      <p class="text-neutral-600 dark:text-neutral-400">
+                        <span class="whitespace-pre-wrap">{spec.subTitle}</span>
+                      </p>
+                    </div>
                   </div>
                 ))
               }
@@ -172,13 +176,16 @@ if (product.data.heroLayout === 'right') {
               product.data.specificationsRight ? (
                 <div class="mt-6 max-w-md space-y-6 md:ml-auto md:mt-0">
                   {product.data.specificationsRight?.map((spec) => (
-                    <div>
-                      <h3 class="block font-bold text-neutral-800 dark:text-neutral-200">
-                        {spec.title}
-                      </h3>
-                      <p class="text-neutral-600 dark:text-neutral-400">
-                        {spec.subTitle}
-                      </p>
+                    <div class="grid grid-cols-[auto,1fr]">
+                      {/* <Icon name={spec.icon} class="mt-1 w-[50px]" /> */}
+                      <div class="flex flex-col">
+                        <h3 class="block font-bold text-neutral-800 dark:text-neutral-200">
+                          {spec.title}
+                        </h3>
+                        <p class="text-neutral-600 dark:text-neutral-400">
+                          {spec.subTitle}
+                        </p>
+                      </div>
                     </div>
                   ))}
                 </div>

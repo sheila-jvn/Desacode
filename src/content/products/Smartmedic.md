@@ -51,10 +51,13 @@ descriptionList:
 specificationsLeft:
   - title: "Smart Solution"
     subTitle: "Our healthcare management system app offers a range of smart solutions that leverage technology to enhance healthcare delivery and streamline operations. These solutions include predictive analytics for early disease detection, personalized treatment plans based on patient data, and automated reminders for medication adherence and follow-up appointments."
+    icon: "material-symbols:check"
   - title: "Electronic Medical Record"
     subTitle: "The app features a comprehensive EMR system that securely stores and manages patient health information. This includes medical history, diagnoses, medications, treatment plans, immunization dates, allergies, radiology images, and laboratory test results. The EMR ensures easy access to accurate and up-to-date patient information for healthcare providers, enabling them to make informed decisions and deliver personalized care."
+    icon: "material-symbols:check"
   - title: "Providing care services for various age groups"
     subTitle: "Our app provides a wide range of care services tailored to the unique needs of different age groups. For children, this includes pediatric care, vaccinations, growth monitoring, and developmental assessments. For adults, services include preventive care, chronic disease management, and health screenings. For seniors, the app offers geriatric care, home healthcare, and assistance with activities of daily living."
+    icon: "material-symbols:check"
   - title: "Integration with another service"
     subTitle: "Our healthcare management app integrates with various systems to provide optimal patient service:
 
@@ -77,11 +80,14 @@ specificationsLeft:
     9. Private Insurance Integration
     
     These integrations enhance efficiency, transparency, and healthcare quality, improving the overall patient experience."
+    icon: "material-symbols:check"
 specificationsRight:
   - title: "Report Service"
     subTitle: "Our app features a powerful report service that generates detailed reports on various aspects of healthcare delivery. These reports include patient health outcomes, treatment effectiveness, resource utilization, and compliance with healthcare standards. The reports help healthcare organizations assess their performance, identify areas for improvement, and make data-driven decisions to enhance patient care."
+    icon: "material-symbols:check"
   - title: "Executive Dashboard"
     subTitle: "The app includes an executive dashboard that provides a high-level overview of key performance indicators (KPIs) and metrics related to healthcare delivery. The dashboard presents real-time data on patient volumes, resource utilization, revenue generation, and patient satisfaction scores. This enables executives to monitor the health of the organization, identify trends, and make strategic decisions to improve operational efficiency and patient outcomes."
+    icon: "material-symbols:check"
 taglist: 
   - "Website"
   - "Customer Platform"
