@@ -3,16 +3,16 @@ export function determineTagColor(tag: string) {
 
   switch (tag) {
     case "Website":
-      color = "bg-[#FF69B4]"; // Hot Pink
+      color = "bg-desacode-700"; // Hot Pink
       break;
     case "Customer Platform":
-      color = "bg-[#1E90FF]"; // Dodger Blue
+      color = "bg-desacode-600"; // Dodger Blue
       break;
     case "Mobile":
-      color = "bg-[#32CD32]"; // Lime Green
+      color = "bg-desacode-500"; // Lime Green
       break;
     default:
-      color = "bg-[#00BFFF]"; // Deep Sky Blue
+      color = "bg-desacode-400"; // Deep Sky Blue
       break;
   }
 
@@ -25,22 +25,22 @@ export function determineTagColor2(title: string) {
 
   switch (title){
     case "DesaPOS":
-      color = "bg-[#FF69B4]"; // Hot Pink
+      color = "bg-desacode-400"; // Hot Pink
       break;
     case "SolveEase TradeStream":
-      color = "bg-[#32CD32]"; // Lime Green
+      color = "bg-desacode-500"; // Lime Green
       break;
     case "SIMEDEASE":
-      color = "bg-[#1E90FF]"; // Dodger Blue
+      color = "bg-desacode-400"; // Dodger Blue
       break;
     case "Smartmedic+":
-      color = "bg-[#00BFFF]"; // Deep Sky Blue
+      color = "bg-desacode-600"; // Deep Sky Blue
       break;
     case "Solve Loyaltease":
-      color = "bg-[#FF8C00]"; // Dark Orange
+      color = "bg-desacode-400"; // Dark Orange
       break;
     default:
-      color = "bg-[#00BFFF]"; // Deep Sky Blue
+      color = "bg-desacode-700"; // Deep Sky Blue
       break;
   }
 
