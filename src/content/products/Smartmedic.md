@@ -1,8 +1,10 @@
 ---
 title: "Smartmedic+"
 description: "Healthcare"
-category: "Healthcare"
+category: 
+  - "Healthcare"
 heroLayout: 'right'
+featureImage: "@/images/bottomImage-Smartmedic.png"
 main:
   id: 1
   content: |

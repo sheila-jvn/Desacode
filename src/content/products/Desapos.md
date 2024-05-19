@@ -1,7 +1,8 @@
 ---
 title: "DesaPOS"
 description: "Retail" 
-category: "Retail" 
+category: 
+  - "Retail" 
 heroLayout: "left"
 main:
   id: 2

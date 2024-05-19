@@ -1,7 +1,8 @@
 ---
 title: "SolveEase TradeStream"
 description: "Banking"
-category: "Banking"
+category: 
+  - "Banking"
 heroLayout: "left"
 main:
   id: 3

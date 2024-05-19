@@ -1,7 +1,9 @@
 ---
 title: "Solve Loyaltease"
 description: "Banking"
-category: "Banking"
+category: 
+  - "Banking"
+  - "Retail"
 heroLayout: "left"
 main:
   id: 4

@@ -11,26 +11,30 @@ interface Props {
 }
 
 const product: CollectionEntry<'products'>[] = (await getCollection('products'))
-  .filter((product) => product.data.category === category)
+  .filter((product) => product.data.category.includes(category))
   .sort(
     (a: CollectionEntry<'products'>, b: CollectionEntry<'products'>) =>
       a.data.main.id - b.data.main.id
   )
 
-  const title: Record<string, string> = {
-  Banking: "Empower Your Bank with Our Cutting-Edge Banking Solutions",
-  Healthcare: "Transform Your Health with Our Revolutionary Healthcare Solution!",
-  Retail: "Revolutionize Your Retail Business with Our Advanced Solutions",
+const title: Record<string, string> = {
+  Banking: 'Empower Your Bank with Our Cutting-Edge Banking Solutions',
+  Healthcare:
+    'Transform Your Health with Our Revolutionary Healthcare Solution!',
+  Retail: 'Revolutionize Your Retail Business with Our Advanced Solutions'
 }
-const subTitle: Record<string, string> = {  
-  Banking: "Drive Growth and Innovation in Banking",
-  Healthcare: "Discover the Future of Wellness",
-  Retail: "Unlock the Future of Retail",
+const subTitle: Record<string, string> = {
+  Banking: 'Drive Growth and Innovation in Banking',
+  Healthcare: 'Discover the Future of Wellness',
+  Retail: 'Unlock the Future of Retail'
 }
 const content: Record<string, string> = {
-  Banking:"Elevate your bank’s capabilities with our state-of-the-art solutions, designed to streamline operations, enhance customer experiences, and drive growth. Our comprehensive suite of banking technologies and services is tailored to meet the unique needs of financial institutions, ensuring you stay ahead in a competitive market.",
-  Healthcare:"Experience the pinnacle of health innovation with our cutting-edge healthcare product, designed to elevate your well-being to new heights. Our comprehensive solution blends advanced technology with user-friendly features, ensuring you stay on top of your health effortlessly.",
-  Retail:"Empower your retail business with cutting-edge solutions designed to streamline operations, enhance customer experiences, and drive growth. Our comprehensive suite of retail technologies and services is tailored to meet the unique demands of the industry, ensuring your business stays competitive and innovative.",
+  Banking:
+    'Elevate your bank’s capabilities with our state-of-the-art solutions, designed to streamline operations, enhance customer experiences, and drive growth. Our comprehensive suite of banking technologies and services is tailored to meet the unique needs of financial institutions, ensuring you stay ahead in a competitive market.',
+  Healthcare:
+    'Experience the pinnacle of health innovation with our cutting-edge healthcare product, designed to elevate your well-being to new heights. Our comprehensive solution blends advanced technology with user-friendly features, ensuring you stay on top of your health effortlessly.',
+  Retail:
+    'Empower your retail business with cutting-edge solutions designed to streamline operations, enhance customer experiences, and drive growth. Our comprehensive suite of retail technologies and services is tailored to meet the unique demands of the industry, ensuring your business stays competitive and innovative.'
 }
 
 const titles = title[category]
@@ -65,7 +69,7 @@ const subtitle = subTitle[category]
     z-index: 1;
     padding-top: 2rem;
     border-radius: 30px;
-    transform: translateY(-10px)
+    transform: translateY(-10px);
   }
 
   .card .tag {
@@ -109,12 +113,12 @@ const subtitle = subTitle[category]
       >{category}</span
     > -->
   </a>
-  <div class="tags bg-white w-full rounded-[1rem]">
+  <div class="tags w-full rounded-[1rem] bg-white">
     {
       product.map((product) => {
         return (
           <a
-            href={`/Desacode/services/${product.data.category}/${product.slug}`}
+            href={`/Desacode/services/${product.data.category[0]}/${product.slug}`}
             class:list={['tag', determineTagColor2(product.data.title)]}>
             {product.data.title}
           </a>

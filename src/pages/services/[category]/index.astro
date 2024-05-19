@@ -12,7 +12,7 @@ import { getCollection } from 'astro:content'
 export async function getStaticPaths() {
   const productEntries = await getCollection('products')
   const categories = Array.from(
-    new Set(productEntries.map((product) => product.data.category))
+    new Set(productEntries.map((product) => product.data.category).flat())
   )
 
   return categories.map((category) => ({ 
@@ -25,7 +25,7 @@ const { category } = Astro.props
 
 // Fetching all the product related content and sorting it by main.id
 const product: CollectionEntry<'products'>[] = (await getCollection('products'))
-  .filter((product) => product.data.category === category)
+  .filter((product) => product.data.category.includes(category))
   .sort(
     (a: CollectionEntry<'products'>, b: CollectionEntry<'products'>) =>
       a.data.main.id - b.data.main.id
