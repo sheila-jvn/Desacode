@@ -67,8 +67,8 @@ importers:
         specifier: ^1.1.0
         version: 1.1.0
       astro-vtbot:
-        specifier: ^1.7.17
-        version: 1.7.17
+        specifier: ^1.7.18
+        version: 1.7.18
       prettier:
         specifier: ^3.2.5
         version: 3.2.5
@@ -1098,8 +1098,8 @@ packages:
   astro-icon@1.1.0:
     resolution: {integrity: sha512-Nksc09p7UuHeMcPNS9w1pKqRw3+wEmmh0A3FJW+FNXvqaeWI4RLvD1MCWErpY3Z5Cvad317rvLdik/Hg8GEk8Q==}
 
-  astro-vtbot@1.7.17:
-    resolution: {integrity: sha512-DWArck5gK03xXsm7weVFYBVA09Z0WFhyOZIf/Rk/uDQPp4pqIQYadZdE9cnA7gcfyoYSNJIwexJAx7tmC8x3zg==}
+  astro-vtbot@1.7.18:
+    resolution: {integrity: sha512-ktW6aCblEh4sR6HGrTAjGv6gC61TRiOls7cqFjflTcvidQ1TC6lN/KmZkkUZOry9MgyPGRrHBEwK0NXfUNh+ZQ==}
 
   astro@4.8.3:
     resolution: {integrity: sha512-pgIKopkmAUXY3EJHdG7zQpudtBzYAsd94A1R7jmLpH2LFZvzHEkAdHnunmSVmgikJCNqtEo3bUCHgLnCPQaN1g==}
@@ -4218,7 +4218,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  astro-vtbot@1.7.17: {}
+  astro-vtbot@1.7.18: {}
 
   astro@4.8.3(typescript@5.4.5):
     dependencies:
