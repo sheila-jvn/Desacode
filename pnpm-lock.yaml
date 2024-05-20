@@ -16,16 +16,16 @@ importers:
         version: 3.1.4
       '@astrojs/starlight':
         specifier: ^0.22.3
-        version: 0.22.3(astro@4.8.3(typescript@5.4.5))
+        version: 0.22.3(astro@4.8.6(typescript@5.4.5))
       '@astrojs/starlight-tailwind':
         specifier: ^2.0.2
-        version: 2.0.2(@astrojs/starlight@0.22.3(astro@4.8.3(typescript@5.4.5)))(@astrojs/tailwind@5.1.0(astro@4.8.3(typescript@5.4.5))(tailwindcss@3.4.3))(tailwindcss@3.4.3)
+        version: 2.0.2(@astrojs/starlight@0.22.3(astro@4.8.6(typescript@5.4.5)))(@astrojs/tailwind@5.1.0(astro@4.8.6(typescript@5.4.5))(tailwindcss@3.4.3))(tailwindcss@3.4.3)
       '@astrojs/tailwind':
         specifier: ^5.1.0
-        version: 5.1.0(astro@4.8.3(typescript@5.4.5))(tailwindcss@3.4.3)
+        version: 5.1.0(astro@4.8.6(typescript@5.4.5))(tailwindcss@3.4.3)
       '@astrojs/vercel':
         specifier: ^7.6.0
-        version: 7.6.0(astro@4.8.3(typescript@5.4.5))
+        version: 7.6.0(astro@4.8.6(typescript@5.4.5))
       '@iconify-json/material-symbols':
         specifier: ^1.1.80
         version: 1.1.80
@@ -33,8 +33,8 @@ importers:
         specifier: ^1.1.66
         version: 1.1.66
       astro:
-        specifier: ^4.8.3
-        version: 4.8.3(typescript@5.4.5)
+        specifier: ^4.8.6
+        version: 4.8.6(typescript@5.4.5)
       astro-compressor:
         specifier: ^0.4.1
         version: 0.4.1
@@ -873,9 +873,6 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@shikijs/core@1.4.0':
-    resolution: {integrity: sha512-CxpKLntAi64h3j+TwWqVIQObPTED0FyXLHTTh3MKXtqiQNn2JGcMQQ362LftDbc9kYbDtrksNMNoVmVXzKFYUQ==}
-
   '@shikijs/core@1.5.2':
     resolution: {integrity: sha512-wSAOgaz48GmhILFElMCeQypSZmj6Ru6DttOOtl3KNkdJ17ApQuGNCfzpk4cClasVrnIu45++2DBwG4LNMQAfaA==}
 
@@ -1101,8 +1098,8 @@ packages:
   astro-vtbot@1.7.17:
     resolution: {integrity: sha512-DWArck5gK03xXsm7weVFYBVA09Z0WFhyOZIf/Rk/uDQPp4pqIQYadZdE9cnA7gcfyoYSNJIwexJAx7tmC8x3zg==}
 
-  astro@4.8.3:
-    resolution: {integrity: sha512-pgIKopkmAUXY3EJHdG7zQpudtBzYAsd94A1R7jmLpH2LFZvzHEkAdHnunmSVmgikJCNqtEo3bUCHgLnCPQaN1g==}
+  astro@4.8.6:
+    resolution: {integrity: sha512-psHIfK+e+bMPhRwghV9yCGH/uc1jvY4DHmDZdoEepax9yA7kzYH0wt3dpkqlcrO2zxl5jzSC3DmqZfkD6wnW9A==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -2682,9 +2679,6 @@ packages:
     resolution: {integrity: sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==}
     engines: {node: '>=8'}
 
-  shiki@1.4.0:
-    resolution: {integrity: sha512-5WIn0OL8PWm7JhnTwRWXniy6eEDY234mRrERVlFa646V2ErQqwIFd2UML7e0Pq9eqSKLoMa3Ke+xbsF+DAuy+Q==}
-
   shiki@1.5.2:
     resolution: {integrity: sha512-fpPbuSaatinmdGijE7VYUD3hxLozR3ZZ+iAx8Iy2X6REmJGyF5hQl94SgmiUNTospq346nXUVZx0035dyGvIVw==}
 
@@ -3256,12 +3250,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@2.3.1(astro@4.8.3(typescript@5.4.5))':
+  '@astrojs/mdx@2.3.1(astro@4.8.6(typescript@5.4.5))':
     dependencies:
       '@astrojs/markdown-remark': 5.1.0
       '@mdx-js/mdx': 3.0.1
       acorn: 8.11.3
-      astro: 4.8.3(typescript@5.4.5)
+      astro: 4.8.6(typescript@5.4.5)
       es-module-lexer: 1.5.2
       estree-util-visit: 2.0.0
       github-slugger: 2.0.0
@@ -3287,21 +3281,21 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 3.23.6
 
-  '@astrojs/starlight-tailwind@2.0.2(@astrojs/starlight@0.22.3(astro@4.8.3(typescript@5.4.5)))(@astrojs/tailwind@5.1.0(astro@4.8.3(typescript@5.4.5))(tailwindcss@3.4.3))(tailwindcss@3.4.3)':
+  '@astrojs/starlight-tailwind@2.0.2(@astrojs/starlight@0.22.3(astro@4.8.6(typescript@5.4.5)))(@astrojs/tailwind@5.1.0(astro@4.8.6(typescript@5.4.5))(tailwindcss@3.4.3))(tailwindcss@3.4.3)':
     dependencies:
-      '@astrojs/starlight': 0.22.3(astro@4.8.3(typescript@5.4.5))
-      '@astrojs/tailwind': 5.1.0(astro@4.8.3(typescript@5.4.5))(tailwindcss@3.4.3)
+      '@astrojs/starlight': 0.22.3(astro@4.8.6(typescript@5.4.5))
+      '@astrojs/tailwind': 5.1.0(astro@4.8.6(typescript@5.4.5))(tailwindcss@3.4.3)
       tailwindcss: 3.4.3
 
-  '@astrojs/starlight@0.22.3(astro@4.8.3(typescript@5.4.5))':
+  '@astrojs/starlight@0.22.3(astro@4.8.6(typescript@5.4.5))':
     dependencies:
-      '@astrojs/mdx': 2.3.1(astro@4.8.3(typescript@5.4.5))
+      '@astrojs/mdx': 2.3.1(astro@4.8.6(typescript@5.4.5))
       '@astrojs/sitemap': 3.1.4
       '@pagefind/default-ui': 1.1.0
       '@types/hast': 3.0.4
       '@types/mdast': 4.0.3
-      astro: 4.8.3(typescript@5.4.5)
-      astro-expressive-code: 0.35.3(astro@4.8.3(typescript@5.4.5))
+      astro: 4.8.6(typescript@5.4.5)
+      astro-expressive-code: 0.35.3(astro@4.8.6(typescript@5.4.5))
       bcp-47: 2.1.0
       hast-util-from-html: 2.0.1
       hast-util-select: 6.0.2
@@ -3319,9 +3313,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/tailwind@5.1.0(astro@4.8.3(typescript@5.4.5))(tailwindcss@3.4.3)':
+  '@astrojs/tailwind@5.1.0(astro@4.8.6(typescript@5.4.5))(tailwindcss@3.4.3)':
     dependencies:
-      astro: 4.8.3(typescript@5.4.5)
+      astro: 4.8.6(typescript@5.4.5)
       autoprefixer: 10.4.19(postcss@8.4.38)
       postcss: 8.4.38
       postcss-load-config: 4.0.2(postcss@8.4.38)
@@ -3341,13 +3335,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/vercel@7.6.0(astro@4.8.3(typescript@5.4.5))':
+  '@astrojs/vercel@7.6.0(astro@4.8.6(typescript@5.4.5))':
     dependencies:
       '@astrojs/internal-helpers': 0.4.0
       '@vercel/analytics': 1.2.2
       '@vercel/edge': 1.1.1
       '@vercel/nft': 0.26.5
-      astro: 4.8.3(typescript@5.4.5)
+      astro: 4.8.6(typescript@5.4.5)
       esbuild: 0.21.2
       fast-glob: 3.3.2
       set-cookie-parser: 2.6.0
@@ -3680,7 +3674,7 @@ snapshots:
   '@expressive-code/plugin-shiki@0.35.3':
     dependencies:
       '@expressive-code/core': 0.35.3
-      shiki: 1.4.0
+      shiki: 1.5.2
 
   '@expressive-code/plugin-text-markers@0.35.3':
     dependencies:
@@ -3840,7 +3834,7 @@ snapshots:
       nopt: 5.0.0
       npmlog: 5.0.1
       rimraf: 3.0.2
-      semver: 7.6.0
+      semver: 7.6.2
       tar: 6.2.1
     transitivePeerDependencies:
       - encoding
@@ -3960,8 +3954,6 @@ snapshots:
 
   '@rollup/rollup-win32-x64-msvc@4.17.2':
     optional: true
-
-  '@shikijs/core@1.4.0': {}
 
   '@shikijs/core@1.5.2': {}
 
@@ -4205,9 +4197,9 @@ snapshots:
 
   astro-compressor@0.4.1: {}
 
-  astro-expressive-code@0.35.3(astro@4.8.3(typescript@5.4.5)):
+  astro-expressive-code@0.35.3(astro@4.8.6(typescript@5.4.5)):
     dependencies:
-      astro: 4.8.3(typescript@5.4.5)
+      astro: 4.8.6(typescript@5.4.5)
       rehype-expressive-code: 0.35.3
 
   astro-icon@1.1.0:
@@ -4220,7 +4212,7 @@ snapshots:
 
   astro-vtbot@1.7.17: {}
 
-  astro@4.8.3(typescript@5.4.5):
+  astro@4.8.6(typescript@5.4.5):
     dependencies:
       '@astrojs/compiler': 2.8.0
       '@astrojs/internal-helpers': 0.4.0
@@ -6342,10 +6334,6 @@ snapshots:
 
   shebang-regex@3.0.0: {}
 
-  shiki@1.4.0:
-    dependencies:
-      '@shikijs/core': 1.4.0
-
   shiki@1.5.2:
     dependencies:
       '@shikijs/core': 1.5.2
@@ -6536,7 +6524,7 @@ snapshots:
 
   typescript-auto-import-cache@0.3.2:
     dependencies:
-      semver: 7.6.0
+      semver: 7.6.2
 
   typescript@5.4.5: {}
 
@@ -6720,7 +6708,7 @@ snapshots:
   volar-service-typescript@0.0.43(@volar/language-service@2.2.3):
     dependencies:
       path-browserify: 1.0.1
-      semver: 7.6.0
+      semver: 7.6.2
       typescript-auto-import-cache: 0.3.2
       vscode-languageserver-textdocument: 1.0.11
       vscode-nls: 5.2.0
