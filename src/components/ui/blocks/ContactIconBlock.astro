@@ -3,8 +3,10 @@
 const {
   heading,
   content,
+  content2,
   isAddressVisible,
   addressContent,
+  addressContent2,
   isLinkVisible,
   linkTitle,
   linkURL,
@@ -15,8 +17,10 @@ const {
 interface Props {
   heading?: string;
   content?: string;
+  content2?: string;
   isAddressVisible?: boolean;
   addressContent?: string;
+  addressContent2?: string;
   isLinkVisible?: boolean;
   linkTitle?: string;
   linkURL?: string;
@@ -45,6 +49,14 @@ fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
     {
       isAddressVisible ? (
         <p class="mt-1 text-sm italic text-neutral-500">{addressContent}</p>
+      ) : null
+    }
+
+    <p class="mt-1 text-sm text-neutral-600 dark:text-neutral-400">{content2}</p>
+
+    {
+      isAddressVisible ? (
+        <p class="mt-1 text-sm italic text-neutral-500">{addressContent2}</p>
       ) : null
     }
     <!-- Conditional rendering of a link if isLinkVisible is true.
