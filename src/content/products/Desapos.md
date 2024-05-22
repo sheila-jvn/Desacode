@@ -11,7 +11,7 @@ main:
   imgCard: "@/images/desapos.webp"
   imgMain: "@/images/product-desapos.svg"
   imgAlt: "Mockup boxes of assorted screw set"
-  downloadUrl: "/Desacode/brochure/Desapos%20Brochure%20Redesain.pdf"
+  downloadUrl: "/brochure/Desapos%20Brochure%20Redesain.pdf"
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
@@ -24,7 +24,7 @@ longDescription:
   subTitle: |
     In today's fast-paced retail environment, staying ahead of the competition is essential. Our POS system evolves with your business, offering scalability, flexibility, and advanced features to meet your unique needs. Embrace innovation and future-proof your business with our cutting-edge solution.
   btnTitle: "Contact sales to learn more"
-  btnURL: "/Desacode/contact"
+  btnURL: "/contact"
   bottomImage: "@/images/bottomImage-Desapos.png"
 descriptionList:
   - title: "Introducing SolveEase QuickCharge: Streamline Sales, Amplify Success with Our POS Solutions."

@@ -1,17 +1,17 @@
 // An array of links for navigation bar
 const navBarLinks = [
-  { name: "Home", url: "/Desacode" },
-  { name: "Products and Services", url: "/Desacode/services" },
-  { name: "Contact", url: "/Desacode/contact" },
+  { name: "Home", url: "/" },
+  { name: "Products and Services", url: "/services" },
+  { name: "Contact", url: "/contact" },
 ];
 // An array of links for footer
 const footerLinks = [
   {
     section: "Quick Links",
     links: [
-      { name: "About us", url: "/Desacode" },
-      { name: "Products", url: "/Desacode/services" },
-      { name: "Contact", url: "/Desacode/contact" },
+      { name: "About us", url: "/" },
+      { name: "Products", url: "/services" },
+      { name: "Contact", url: "/contact" },
     ],
   },
 ];

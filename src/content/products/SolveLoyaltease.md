@@ -24,7 +24,7 @@ longDescription:
   subTitle: |
     Unlock the power of customer loyalty with Solve Loyaltease—the ultimate solution for businesses seeking to enhance customer engagement and drive repeat purchases. Our cutting-edge loyalty app solutions are tailored to meet the unique needs of your business, helping you build lasting relationships with your customers and maximize your bottom line.
   btnTitle: "Contact sales to learn more"
-  btnURL: "/Desacode/contact"
+  btnURL: "/contact"
   bottomImage: "@/images/bottomImage-Loyaltease.png"
 descriptionList:
   - title: "Tailored Incentives"

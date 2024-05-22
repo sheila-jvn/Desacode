@@ -11,7 +11,7 @@ main:
   imgCard: "@/images/SEMN.webp"
   imgMain: "@/images/tradestream.svg"
   imgAlt: "Mockup boxes of a tap bolts and nuts set"
-  downloadUrl: "/Desacode/brochure/SEMN%20Brochur%20(ReDesain).pdf"
+  downloadUrl: "/brochure/SEMN%20Brochur%20(ReDesain).pdf"
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
@@ -24,7 +24,7 @@ longDescription:
   subTitle: |
     Welcome to TradeStream, the ultimate solution for streamlined payment management. Seamlessly integrating cutting-edge technology with user-friendly features, TradeStream is here to revolutionize how you manage your transactions. Explore the key features and benefits below to discover the power of TradeStream.
   btnTitle: "Contact sales to learn more"
-  btnURL: "/Desacode/contact"
+  btnURL: "/contact"
   bottomImage: "@/images/bottomImage-Tradestream.png"
 descriptionList:
   - title: "Efficiency in your business "

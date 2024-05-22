@@ -11,7 +11,7 @@ main:
   imgCard: "@/images/simedease.webp"
   imgMain: "@/images/product-simedease.png"
   imgAlt: "Mockup boxes of machine screws set"
-  downloadUrl: "/Desacode/brochure/Simedise%20Brochure.pdf"
+  downloadUrl: "/brochure/Simedise%20Brochure.pdf"
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
@@ -25,7 +25,7 @@ longDescription:
     By leveraging technology to reach underserved populations, SIMEDEASE can address healthcare disparities, promote preventive care, and support sustainable health initiatives worldwide. Join us in embracing telemedicine as a catalyst for positive change in healthcare delivery. Together, let's harness the power of innovation to build a healthier, more connected world for generations to come.
 
   btnTitle: "Contact sales to learn more"
-  btnURL: "/Desacode/contact"
+  btnURL: "/contact"
   bottomImage: "@/images/bottomImage-Simedease.png"
 descriptionList:
   - title: "Experience healthcare in a new light with SIMEDEASE"

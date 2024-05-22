@@ -12,7 +12,7 @@ main:
   imgCard: "@/images/Smartmedic.webp"
   imgMain: "@/images/product-smartmedic.svg"
   imgAlt: "Mockup boxes of machine screws set"
-  downloadUrl: "/Desacode/brochure/Brochure%20Smartmedic%20Redesain%20Indo.pdf"
+  downloadUrl: "/brochure/Brochure%20Smartmedic%20Redesain%20Indo.pdf"
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
@@ -32,7 +32,7 @@ longDescription:
     Apart from that, we also have a customer platform that allows customers to do various things, including enabling patients to make reservations online, accessing hospital information, accessing health information, providing feedback and evaluation, health tracking, telemedicine, and also panic buttons.
 
   btnTitle: "Contact sales to learn more"
-  btnURL: "/Desacode/contact"
+  btnURL: "/contact"
   bottomImage: "@/images/bottomImage-Smartmedic.png"
 descriptionList:
   - title: "Solution for all"
