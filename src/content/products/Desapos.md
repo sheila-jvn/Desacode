@@ -85,8 +85,8 @@ taglist:
   - "Website"
   - "Customer Platform"
   - "Mobile"
-blueprints:
-  first: "@/images/blueprint-1.avif"
-  second: "@/images/blueprint-2.avif"
+# blueprints:
+#   first: "@/images/blueprint-1.avif"
+#   second: "@/images/blueprint-2.avif"
 slug: Desapos  
 ---

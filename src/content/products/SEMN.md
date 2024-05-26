@@ -11,7 +11,7 @@ main:
   imgCard: "@/images/SEMN.webp"
   imgMain: "@/images/tradestream.svg"
   imgAlt: "Mockup boxes of a tap bolts and nuts set"
-  downloadUrl: "/brochure/SEMN%20Brochur%20(ReDesain).pdf"
+  downloadUrl: "/brochure/SEMN%20Brochure%20(ReDesain).pdf"
 tabs:
   - id: "tabs-with-card-item-1"
     dataTab: "#tabs-with-card-1"
@@ -65,8 +65,8 @@ taglist:
   - "Website"
   - "Customer Platform"
   - "Mobile"
-blueprints:
-  first: "@/images/blueprint-1.avif"
-  second: "@/images/blueprint-2.avif"
+# blueprints:
+#   first: "@/images/blueprint-1.avif"
+#   second: "@/images/blueprint-2.avif"
 slug: SEMN    
 ---

@@ -58,7 +58,7 @@ interface Props {
     font-size: 1.25rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
-  }
+  } 
 
   .card .description {
     font-size: 1rem;
@@ -69,7 +69,7 @@ interface Props {
 <div class="card mt-10">
   <a
     class="h-50 group grid grid-cols-1 grid-rows-1 overflow-hidden"
-    href={`/services/${product.data.category}/${product.slug}`}
+    href={`/services/${product.data.category[0]}/${product.slug}`}
     ><Image
       class="col-start-1 row-start-1 transition-transform duration-700 ease-out group-hover:scale-110"
       src={product.data.main.imgCard}
