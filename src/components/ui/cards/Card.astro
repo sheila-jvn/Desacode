@@ -1,45 +1,45 @@
 ---
 // Importing necessary functions from Astro
-import type { CollectionEntry } from 'astro:content'
-import { getCollection } from 'astro:content'
-import { determineTagColor2 } from '../../../helper/bgTagList'
+import type { CollectionEntry } from "astro:content";
+import { getCollection } from "astro:content";
+import { determineTagColor2 } from "../../../helper/bgTagList";
 
-const { category } = Astro.props
+const { category } = Astro.props;
 
 interface Props {
-  category: string
+  category: string;
 }
 
-const product: CollectionEntry<'products'>[] = (await getCollection('products'))
+const product: CollectionEntry<"products">[] = (await getCollection("products"))
   .filter((product) => product.data.category.includes(category))
   .sort(
-    (a: CollectionEntry<'products'>, b: CollectionEntry<'products'>) =>
+    (a: CollectionEntry<"products">, b: CollectionEntry<"products">) =>
       a.data.main.id - b.data.main.id
-  )
+  );
 
 const title: Record<string, string> = {
-  Banking: 'Empower Your Bank with Our Cutting-Edge Banking Solutions',
+  Banking: "Empower Your Bank with Our Cutting-Edge Banking Solutions",
   Healthcare:
-    'Transform Your Health with Our Revolutionary Healthcare Solution!',
-  Retail: 'Revolutionize Your Retail Business with Our Advanced Solutions'
-}
+    "Transform Your Health with Our Revolutionary Healthcare Solution!",
+  Retail: "Revolutionize Your Retail Business with Our Advanced Solutions",
+};
 const subTitle: Record<string, string> = {
-  Banking: 'Drive Growth and Innovation in Banking',
-  Healthcare: 'Discover the Future of Wellness',
-  Retail: 'Unlock the Future of Retail'
-}
+  Banking: "Drive Growth and Innovation in Banking",
+  Healthcare: "Discover the Future of Wellness",
+  Retail: "Unlock the Future of Retail",
+};
 const content: Record<string, string> = {
   Banking:
-    'Elevate your bank’s capabilities with our state-of-the-art solutions, designed to streamline operations, enhance customer experiences, and drive growth. Our comprehensive suite of banking technologies and services is tailored to meet the unique needs of financial institutions, ensuring you stay ahead in a competitive market.',
+    "Elevate your bank’s capabilities with our state-of-the-art solutions, designed to streamline operations, enhance customer experiences, and drive growth. Our comprehensive suite of banking technologies and services is tailored to meet the unique needs of financial institutions, ensuring you stay ahead in a competitive market.",
   Healthcare:
-    'Experience the pinnacle of health innovation with our cutting-edge healthcare product, designed to elevate your well-being to new heights. Our comprehensive solution blends advanced technology with user-friendly features, ensuring you stay on top of your health effortlessly.',
+    "Experience the pinnacle of health innovation with our cutting-edge healthcare product, designed to elevate your well-being to new heights. Our comprehensive solution blends advanced technology with user-friendly features, ensuring you stay on top of your health effortlessly.",
   Retail:
-    'Empower your retail business with cutting-edge solutions designed to streamline operations, enhance customer experiences, and drive growth. Our comprehensive suite of retail technologies and services is tailored to meet the unique demands of the industry, ensuring your business stays competitive and innovative.'
-}
+    "Empower your retail business with cutting-edge solutions designed to streamline operations, enhance customer experiences, and drive growth. Our comprehensive suite of retail technologies and services is tailored to meet the unique demands of the industry, ensuring your business stays competitive and innovative.",
+};
 
-const titles = title[category]
-const contents = content[category]
-const subtitle = subTitle[category]
+const titles = title[category];
+const contents = content[category];
+const subtitle = subTitle[category];
 ---
 
 <style>
@@ -50,8 +50,9 @@ const subtitle = subTitle[category]
     overflow: hidden;
     text-align: center;
     max-width: 400px;
-    margin: auto;
-    padding-bottom: 3rem;
+    margin-inline: auto;
+    padding-bottom: 1rem;
+    min-height: 100%;
   }
 
   .card img {
@@ -98,7 +99,7 @@ const subtitle = subTitle[category]
   }
 </style>
 
-<div class="card mt-10">
+<div class="card">
   <a
     class="h-50 group grid grid-cols-1 grid-rows-1 overflow-hidden"
     href={`/services/${category}`}
@@ -106,7 +107,7 @@ const subtitle = subTitle[category]
       class="col-start-1 row-start-1 transition-transform duration-700 ease-out group-hover:scale-110"
       src={`/${category}.webp`}
       alt=""
-      draggable={'false'}
+      draggable={"false"}
     />
     <!-- <span
       class="relative z-10 col-start-1 row-start-1 text-sm font-bold text-neutral-50 md:text-lg"
@@ -119,10 +120,11 @@ const subtitle = subTitle[category]
         return (
           <a
             href={`/services/${product.data.category[0]}/${product.slug}`}
-            class:list={['tag', determineTagColor2(product.data.title)]}>
+            class:list={["tag", determineTagColor2(product.data.title)]}
+          >
             {product.data.title}
           </a>
-        )
+        );
       })
     }
   </div>

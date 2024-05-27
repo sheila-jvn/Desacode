@@ -52,7 +52,7 @@ const pageTitle: string = `Products | ${SITE.title}`
     class="text-balance text-center text-2xl font-bold tracking-tight text-desacode-700 dark:text-desacode-700 md:text-4xl md:leading-tight">
     Our Products
   </h1>
-  <section class="mt-10 flex flex-wrap items-center justify-center gap-10">
+  <section class="mt-10 flex flex-wrap items-stretch justify-center gap-10">
     {
       categories.map((category) => {
         return <Card category={category} />
