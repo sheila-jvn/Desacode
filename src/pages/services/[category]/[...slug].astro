@@ -41,7 +41,7 @@ if (product.data.heroLayout === 'right') {
   imageClass = 'relative left-[-2rem] md:left-[-4rem] top-[-1.5rem]'
 } else if (product.data.heroLayout === 'left') {
   containerClass = 'flex-col sm:flex-row'
-  imageClass = 'relative right-[-4rem] md:right-[-4rem] top-[1rem]'
+  imageClass = 'relative right-[-4rem] md:right-[-4rem] top-[-1rem]'
 }
 
 console.log('product.data.featureImage', product.data.featureImage)
@@ -52,7 +52,7 @@ console.log('product.data.featureImage', product.data.featureImage)
   </div>
 
   <section
-    class="mx-auto flex max-w-[85rem] flex-col px-4 py-10 sm:px-6 lg:px-8 lg:py-10 2xl:max-w-full">
+    class="mx-auto flex max-w-[85rem] flex-col px-4 py-24 sm:px-6 lg:px-8 lg:py-20 2xl:max-w-full">
     <div
       class:list={[
         'flex justify-between space-y-4 sm:space-y-0',
