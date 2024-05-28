@@ -9,7 +9,7 @@ main:
   content: |
     A complete POS solution designed to simplify operations and improve the customer experience. With real-time transaction tracking, reliable inventory management, and customizable reports, businesses can optimize efficiency and drive growth.
   imgCard: "@/images/desapos.webp"
-  imgMain: "@/images/desapos.png"
+  imgMain: "@/images/product-desapos.png"
   imgAlt: "Mockup boxes of assorted screw set"
   downloadUrl: "/brochure/Desapos%20Brochure%20Redesain.pdf"
 tabs:

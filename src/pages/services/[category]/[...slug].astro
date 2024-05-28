@@ -36,12 +36,19 @@ const { product } = Astro.props
 const pageTitle: string = `${product.data.title} | ${SITE.title}`
 let containerClass = ''
 let imageClass = ''
+let imageWidth = ''
 if (product.data.heroLayout === 'right') {
   containerClass = 'flex-col-reverse sm:flex-row-reverse'
   imageClass = 'relative left-[-2rem] md:left-[-4rem] top-[-1.5rem]'
 } else if (product.data.heroLayout === 'left') {
   containerClass = 'flex-col sm:flex-row'
-  imageClass = 'relative right-[-4rem] md:right-[-4rem] top-[-1rem]'
+  imageClass = 'relative right-[-4rem] md:right-[-4rem] sm:top-[-1rem] top-[1rem]'
+}
+
+if (product.data.title === 'DesaPOS') {
+  imageWidth = 'w-[800px]'
+} else {
+  imageWidth = 'w-[600px]'
 }
 
 console.log('product.data.featureImage', product.data.featureImage)
@@ -87,7 +94,7 @@ console.log('product.data.featureImage', product.data.featureImage)
         <Image
           id="fadeInMoveRight"
           src={product.data.main.imgMain}
-          class:list={['w-[600px]', imageClass]}
+          class:list={[imageWidth, imageClass]}
           alt={product.data.main.imgAlt}
           format={'png'}
           loading={'eager'}
